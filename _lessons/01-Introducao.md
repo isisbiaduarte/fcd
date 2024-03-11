@@ -82,7 +82,7 @@ def mostrar_historico():
 
 ### Professor: Flavio Vinicius Diniz de Figueiredo (DCC)
 
-<center><img src='01-Introducao/images/flavio.jpg' width=240></center>
+<center><img src='images/flavio.jpg' width=240></center>
 
 - BSc em Ciência da Computação pela UFCG
 - Mestrado e Doutorado em Ciência da Computação pela UFMG
@@ -93,7 +93,7 @@ def mostrar_historico():
 
 ### Professor: Uriel Moreira Silva (DEST)
 
-<center><img src='01-Introducao/images/uriel.jpg' width=240></center>
+<center><img src='images/uriel.jpg' width=240></center>
 
 - Possui graduação em Ciências Econômicas pelo Grupo IBMEC
 - Mestrado e Doutorado em Estatística pela UFMG
@@ -111,7 +111,7 @@ Além disso, temos uma equipe de monitores para ajudar vocês.
 
 ## O que é “ciência de dados”? 🤔
 
-<center><img src='01-Introducao/images/what-is-ds.png' width=1250>Todo mundo parece ter sua própria definição de ciência de dados.</center>
+<center><img src='images/what-is-ds.png' width=1250>Todo mundo parece ter sua própria definição de ciência de dados.</center>
 
 ### O que é "ciência de dados"?
 
@@ -130,7 +130,7 @@ A ciência de dados trata de **tirar conclusões úteis a partir de dados usando
 
 Passamos alguns anos analisando gráficos como este:
 
-<center><img src='01-Introducao/images/dengue.png' width=75%></center>
+<center><img src='images/dengue.png' width=75%></center>
 
 ### Também pode ser divertido!
 
