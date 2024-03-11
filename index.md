@@ -1,10 +1,10 @@
 ---
 layout: home
-title: DCC 204
+title: ICE 071
 nav_exclude: true
 seo:
   type: Course
-  name: Programação e Desenvolvimento de Software 2
+  name: Fundamentos de Ciência de Dados
 ---
 
 # {{ site.tagline }}
@@ -18,44 +18,38 @@ seo:
 
 ## Ementa
 
-Programação estruturada e linguagem de programação modular. Metodologias de
-desenvolvimento de software. Compreensão, corretude e depuração de programas.
-Resolução de problemas de forma modular e eficiente.
+Fundamentos da Ciência de Dados combina três perspectivas:
+pensamento inferencial, pensamento computacional e
+relevância no mundo real. O curso ensina conceitos e
+habilidades críticas de análise descritiva e inferencial a
+partir de ferramentas computacionais. Durante a disciplina,
+um conjunto de análises práticas de dados do mundo real,
+incluindo dados econômicos, coleções de documentos, dados
+geográficos e redes sociais, é realizado com os discentes.
+Atividade integraliza extensão.
 
 ## Objetivos
 
-O objetivo da disciplina é apresentar técnicas básicas de desenvolvimento,
-teste e análise de programas de computador, para a resolução de problemas de
-forma eficaz. É esperado que nesta disciplina os alunos desenvolvam seus
-primeiros programas de tamanho moderado, motivando a necessidade de uso de boas
-práticas de desenvolvimento, fixando os conteúdos abordados através de
-atividades práticas. Concluindo o curso, os alunos deverão dominar as técnicas
-mais básicas utilizadas no processo de desenvolvimento de software.
+O objetivo da disciplina é apresentar técnicas básicas de
+ciência de dados. Em particular, queremos ensinar os
+discentes o básico de programação e estatística para
+realizar o ciclo de trabalho do cientista de dados
+(descrição, inferência e predição). Concluindo o curso os
+discentes terão a base necessária para seguir para matérias
+como: Estatística Básica (DEST), Álgebra Linear
+Computacional (DCC) e Introdução à Ciência de Dados (BCD).
 
 ## Avaliação
 
 * Provas Teóricas (2 x 25 pts): 50 pontos.
-* Atividades práticas (approx 20 VPLs de 1 pto): 20 pontos.
+* Atividades práticas (10 Laboratórios de 2 pts): 20 total.
 * Projeto: 30 pontos.
 
 ## Livros
 
-1. Clean Code: A Handbook of Agile Software Craftsmanship.
-   Robert C. Martin.
-   Prentice Hall, 2008.
-
-1. Code Complete: A Practical Handbook of Software Construction.
-   Steve McConnell.
-   Microsoft Press, 2004. 2nd Edition.
-
-1. Effective C++: 55 Specific Ways to Improve Your Programs and Designs.
-   Scott Meyers.
-   Addison-Wesley Professional, 2005. 3nd Edition.
-
-1. A Tour of C++.
-   Bjarne Stroustrup.
-   Addison-Wesley Professional, 2013. 1st Edition.
-
+1. Ani Adhikari, John DeNero, David Wagner. Computational
+   and Inferential Thinking: The Foundations of Data
+   Science: [Online](https://inferentialthinking.com/chapters/intro.html)
 
 [Slides]: ./slides
 [Calendário]: https://docs.google.com/spreadsheets/d/11MYxpYnlMiw1883H1tEswqZc0WmqWHiWXrkSb_WqSN4/edit?usp=sharing
