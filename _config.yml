@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: PDS2
-tagline: PDS2
-description: Programação e Desenvolvimento de Software 2
+title: FCD
+tagline: Curso Base do Bacharelado em Ciência de Dados (UFMG)
+description: Fundamentos de Ciência de Dados
 author: Flavio Figueiredo
 url: 'https://flaviovdf.github.io'
-baseurl: '/pds2-ufmg'
+baseurl: '/fcd'
 
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
@@ -29,7 +29,7 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links_new_tab: true
-footer_content: 'Flavio Figueiredo &copy; 2022 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
+footer_content: 'Flavio Figueiredo &copy; 2024 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>'
 
 # Collections for website data
 collections:
