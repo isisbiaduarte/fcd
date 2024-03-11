@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: ICE 071
 nav_exclude: true
 seo:
@@ -51,12 +51,7 @@ Computacional (DCC) e Introdução à Ciência de Dados (BCD).
    and Inferential Thinking: The Foundations of Data
    Science: [Online](https://inferentialthinking.com/chapters/intro.html)
 
-[Slides]: ./slides
-[Calendário]: https://docs.google.com/spreadsheets/d/11MYxpYnlMiw1883H1tEswqZc0WmqWHiWXrkSb_WqSN4/edit?usp=sharing
 [Ementa]: #ementa
 [Objetivos]: #objetivos
-[Informes]: #informes
 [Avaliação]: #avaliação
-[TPs]: #tps
-[Bibliografia]: #bibliografia
 [Livros]: #livros
