@@ -26,51 +26,58 @@ Cada função/método abaixo cria um novo DataFrame. Lembre-se de salvá-lo!
 - `df.drop(columns=nome_da_coluna ou [col_1_nome, ... col_k_nome])`: Remove coluna(s).
 - `df.set_index(nome_da_coluna)`: Move uma coluna para o índice.
 - `df.reset_index()`: Move o índice para uma coluna.
-- `df.sort_values(by=nome_da_coluna, ascending=True)`: Ordena o DataFrame.
+- `df.sort_values(by=nome_da_coluna, ascending=True)`: Ordena o DataFrame inteiro em ordem ascendente pelos valores em uma coluna. ascending pode ser omitido pois seu valor padrão é True.
 - `left.merge(right, left_on=coluna_esquerda, right_on=coluna_direita):` Junta os DataFrames left e right pelas colunas especificadas. Pode usar on em vez de left_on e right_on se os nomes das colunas forem iguais.
 
 ## Arrays e NumPy
 
-- `arr[indice]`: Acesso por índice.
-- `np.append(arr, valor)`: Adiciona `valor` ao final de `arr`.
+- `arr[indice]`: O elemento na posição indice no array arr. O primeiro elemento é arr[].
+- `np.append(arr, valor)`: Uma cópia de arr com valor adicionado ao final. Isso não muda arr a menos que você armazene o resultado em arr.
+- `np.count_nonzero(arr)`: O número de entradas não-zero em arr. True conta como 1, False conta como 0.
+- `np.arange(início, parada, passo)`: Um array de números começando com início, aumentando/diminuindo em incrementos de passo e parando antes de (excluindo) parada. Se início ou passo forem omitidos, os valores padrão são 0 e 1, respectivamente.
+- `np.percentile(arr, p)`: O percentil p dos números em arr.
 
 ## Plotagem
 
-- `df.plot(kind=tipo, x=col_x, y=col_y)`: Desenha um gráfico (`scatter`, `line`, `bar`, `barh`).
+- `df.plot(kind=tipo, x=col_x, y=col_y)`: Desenha um gráfico. tipo pode ser 'scatter', 'line', 'bar', ou 'barh'. Se x for omitido, o índice é usado. Para a maioria dos tipos de gráficos, se y for omitido, todas as colunas são plotadas em eixos compartilhados.
 
 ## Acessando Dados
 
 - `df.shape[]`: Número de linhas e colunas.
 - `df.get(nome_da_coluna)`: Acesso a uma coluna como Série.
 
-## Métodos de Série
+## Operações em DataFrames e Series
 
-- `.count()`, `.max()`, `.min()`, `.sum()`, `.mean()`, `.median()`, `.unique()`
+- `df[condição]`: Filtra linhas que satisfazem a `condição`.
+- `df[[coluna_1, coluna_2, ...]]`: Um DataFrame apenas com as colunas especificadas.
+- `df.mean()`, `df.min()`, `df.max()`, `ser.mean()`, `ser.min()`, `ser.max()`: Calcula a média, o mínimo, e o máximo de um DataFrame ou Series, respectivamente.
 
-## Consultando
+## Estatísticas e Agregações
 
-- `df[df.get(nome_da_coluna)] > 42`: Filtra linhas.
+- `df.groupby(coluna).aggregate(função ou {coluna: função, ...})`: Agrupa por `coluna`, então calcula agregações especificadas.
+- `df.pivot_table(values=valor, index=índice, columns=colunas, aggfunc=função)`: Cria uma tabela pivô.
 
-## Agrupando
+## Indexação e Seleção
 
-- `df.groupby(nome_da_coluna)`: Seguido por `.mean()`, `.median()`, etc.
+- `df.loc[rótulos_linhas, rótulos_colunas]`: Seleciona com base em rótulos.
+- `df.iloc[índices_linhas, índices_colunas]`: Seleciona com base em índices numéricos.
 
-## Escrevendo Funções
+## Operações de Strings em Series
 
-- `def nome_da_função(argumento1, ... argumentoK): corpo_da_função`
+- `ser.str.lower()`, `ser.str.upper()`, `ser.str.len()`: Métodos que operam em cada string de uma Series.
 
-## Aplicando Funções
+## Trabalhando com Datas e Horários
 
-- `df.get(nome_da_coluna).apply(nome_da_função)`: Aplica função a cada entrada.
+- `pd.to_datetime(ser)`: Converte uma Series para datetime.
+- `df['coluna'].dt.day`, `df['coluna'].dt.month`, `df['coluna'].dt.year`: Extrai o dia, mês, e ano de uma coluna datetime.
 
-## Estatísticas e Teste de Hipóteses
+## Lendo e Escrevendo Dados
 
-- Conceitos de experimento, modelo, teste de hipótese, p-valor, etc.
+- `df.to_csv(caminho_para_arquivo)`: Escreve o DataFrame para um arquivo CSV.
 
-## Unidades Padrão, Correlação, Regressão
+## Utilidades
 
-- Conversão para unidades padrão, coeficiente de correlação, linha de regressão.
+- `len(obj)`: Retorna o comprimento de um objeto, como um DataFrame, Series, ou array.
+- `np.random.choice(arr, tamanho, replace=False)`: Escolhe aleatoriamente `tamanho` elementos de `arr`. `replace` determina se a seleção é com reposição.
 
-## Distribuição de Espalhamento
-
-- Variância, desvio padrão, desigualdade de Chebyshev, distribuição normal.
+Lembre-se, estas são apenas algumas das funções e métodos disponíveis em pandas e numpy para manipulação de dados e análise estatística. A prática e a exploração de documentações e recursos adicionais podem ajudar a aprofundar seu entendimento.
