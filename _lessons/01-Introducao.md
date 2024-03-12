@@ -112,7 +112,7 @@ Além disso, temos uma equipe de monitores para ajudar vocês.
 
 ## O que é “ciência de dados”? 🤔
 
-<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/what-is-ds.png' width=1250>Todo mundo parece ter sua própria definição de ciência de dados.</center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/what-is-ds.png)
 
 ### O que é "ciência de dados"?
 
@@ -131,11 +131,11 @@ A ciência de dados trata de **tirar conclusões úteis a partir de dados usando
 
 Passamos alguns anos analisando gráficos como este:
 
-<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/dengue.png' width=75%></center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/dengue.png)
 
 ### Também pode ser divertido!
 
-<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/rapper_vocab.jpg' width=75%></center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/rapper_vocab.jpg)
 
 Do artigo de [The Pudding](https://pudding.cool/) em [The Pudding](https://pudding.cool/).
 
