@@ -83,7 +83,7 @@ def mostrar_historico():
 
 ### Professor: Flavio Vinicius Diniz de Figueiredo (DCC)
 
-<center><img src='images/flavio.jpg' width=240></center>
+<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/flavio.jpg' width=240></center>
 
 - BSc em Ciência da Computação pela UFCG
 - Mestrado e Doutorado em Ciência da Computação pela UFMG
@@ -94,7 +94,7 @@ def mostrar_historico():
 
 ### Professor: Uriel Moreira Silva (DEST)
 
-<center><img src='images/uriel.jpg' width=240></center>
+<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/uriel.jpg' width=240></center>
 
 - Possui graduação em Ciências Econômicas pelo Grupo IBMEC
 - Mestrado e Doutorado em Estatística pela UFMG
@@ -112,7 +112,7 @@ Além disso, temos uma equipe de monitores para ajudar vocês.
 
 ## O que é “ciência de dados”? 🤔
 
-<center><img src='images/what-is-ds.png' width=1250>Todo mundo parece ter sua própria definição de ciência de dados.</center>
+<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/what-is-ds.png' width=1250>Todo mundo parece ter sua própria definição de ciência de dados.</center>
 
 ### O que é "ciência de dados"?
 
@@ -131,11 +131,11 @@ A ciência de dados trata de **tirar conclusões úteis a partir de dados usando
 
 Passamos alguns anos analisando gráficos como este:
 
-<center><img src='images/dengue.png' width=75%></center>
+<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/dengue.png' width=75%></center>
 
 ### Também pode ser divertido!
 
-<center><img src='images/rapper_vocab.jpg' width=75%></center>
+<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/01-Introducao/images/rapper_vocab.jpg' width=75%></center>
 
 Do artigo de [The Pudding](https://pudding.cool/) em [The Pudding](https://pudding.cool/).
 
@@ -208,7 +208,7 @@ As sessões de monitoria servem para que você pratique as **ideias** do curso.
 ### Projeto
 
 - No **Projeto Intermediário** e no **Projeto Final**, você se aprofundará em um conjunto de dados! Os projetos são mais longos do que os trabalhos de casa, por isso damos-lhe mais tempo para trabalhar neles.
-- Projetos deste semestre: Restaurantes 🍔 e Great British Bake Off Great British Bake Off 👩‍🍳🍰.
+- Projetos deste semestre: À Definir.
 - Você pode trabalhar em projetos com parceiros (pares). Os dois devem contribuir ativamente em **todas as partes** do projeto.
 
 ### Avaliações
@@ -256,7 +256,7 @@ Saiba que estamos aqui para ajudá-lo – veja como:
 
 Independentemente da sua formação, você pode ter sucesso neste curso. **Nenhuma experiência anterior em programação ou estatística será assumida!**
 
-Assista no YouTube: [We’re All Data Scientists | Rebecca Nugent | TEDxCMU](https://www.youtube.com/watch?v=YMnqPTLoj7o).
+Assista no YouTube: [We’re All Data Scientists](https://www.youtube.com/watch?v=YMnqPTLoj7o).
 
 ### Sua Saúde Mental!!
 
@@ -280,7 +280,7 @@ Abrimos arquivos com "open". A função print serve para imprimir dados. Note co
 
 ```python
 #In: 
-livro = open('01-Introducao/data/dom-casmurro.txt')
+livro = open('dom-casmurro.txt')
 print(livro.readline())
 ```
 
@@ -293,7 +293,7 @@ Além do mais agora estamos fazendo uso de um laço for. Note que não temos cha
 
 ```python
 #In: 
-livro = open('01-Introducao/data/dom-casmurro.txt')
+livro = open('dom-casmurro.txt')
 livro_inteiro = livro.readlines()
 ```
 
