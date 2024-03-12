@@ -8,7 +8,13 @@ description: Guia Rápido de Referência do Curso.
 
 ---
 
-Abaixo, `df` é um DataFrame, `ser` é uma Série, `arr` é um array. `babypandas` foi importado como `bpd` e `numpy` como `np`.
+## Bibliotecas
+
+- `numpy` cuida de operações com vetores e matrizes
+- `babypandas` uma versão simplificada da biblioteca pandas, cuida de tabelas
+- `matplotlib` gera gráficos, não fazemos uso de matplotlib avançado
+
+Durante o restante desse guia, `df` é um DataFrame, `ser` é uma Série, `arr` é um array. `babypandas` foi importado como `bpd` e `numpy` como `np`.
 
 ## Construindo e Organizando DataFrames
 
