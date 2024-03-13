@@ -4,7 +4,7 @@ title: Causalidade
 nav_order: 2
 ---
 
-# Causalidade
+# Tópico 2 - Causalidade
 {: .no_toc .mb-2 }
 
 Uma breve introdução ao santo graal da ciência de dados
