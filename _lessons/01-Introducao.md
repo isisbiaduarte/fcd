@@ -46,8 +46,6 @@ plt.style.use('ggplot')
 #In: 
 # Ignore este código, porém execute o mesmo
 
-# Don't worry about what this code does, but make sure to run it if you're following along.
-
 from IPython.display import IFrame
 def mostrar_historico():
     src = 'https://docs.google.com/presentation/d/e/2PACX-1vRJnOqqZO6OMMad28fQWCSYG8Nqv2tUxxJ7t8q_aTLoOqw63za0YSK7kzpIYEJNsOzcXqnOg4oMincJ/embed?start=false&loop=false&delayms=3000'
