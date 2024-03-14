@@ -22,6 +22,11 @@ Resultados Esperados
 {:toc}
 ---
 
+[Slides](https://docs.google.com/presentation/d/1DA5UguPP5tV-vwgVxf4h2kxm7q6VPzDEoAZx1sDc5oM)
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTztZUOfhJAA8cb32YMRcVr86CP6fB3Mu4GbXNrkPAyKuW3w0jlcTCBBTTYsgqS6glqD5s3iMuWBuWX/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
 Esta página ainda está sendo escrita. Por enquanto, leia as
 referências em livro. Lembre-se que este material é uma
 apostila (incompleta), não um livro!
