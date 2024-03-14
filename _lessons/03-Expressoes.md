@@ -40,7 +40,7 @@ def show_nested_eval():
 - Expressões de chamada.
 - Tipos de dados.
 
-Muita programação – acompanhe no notebook clicando no link "Expressões e tipos de dados" em [course website](https://dsc10.com).
+Muita programação – acompanhe no notebook clicando no link do Collab acima!
 
 ## O que é código? O que são notebooks Jupyter? 💻
 
@@ -71,15 +71,6 @@ Muita programação – acompanhe no notebook clicando no link "Expressões e ti
 </center>
 
 - **Jupyter Notebooks** nos permite escrever e executar código em um único documento. Eles também nos permitem incorporar texto e código. **Usaremos Jupyter Notebooks durante todo o trimestre**.
-- [DataHub](https://datahub.ucsd.edu) é um servidor que permite executar Jupyter Notebooks a partir de seu navegador sem precisar instalar nenhum software localmente.
-
-### À parte: slides da aula
-
-- Os slides das palestras que você está vendo agora também estão no formato de um Jupyter Notebook – estamos apenas usando uma extensão (chamada _RISE_) para fazê-los parecer slides.
-- Ao clicar no link "aula" no site do curso, você verá o caderno de aula no formato de caderno normal.
-- Para visualizá-lo em forma de slides, clique no botão do gráfico de barras na barra de ferramentas.
-
-<center><img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/03-Expressoes/images/rise.png' width=10%><i>Este botão!</i></center>
 
 ## Expressões
 
@@ -436,7 +427,7 @@ sd
 ### Uma analogia útil
 
 <center>
-<img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/03-Expressoes/images/images/box.png' width=600>
+<img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/03-Expressoes/images/box.png' width=600>
 </center>
 
 - Uma metáfora comum é que as variáveis ​​são como caixas ou contêineres ([source](https://www.tomasbeuzen.com/python-programming-for-data-science/chapters/chapter1-basics.html)).
@@ -971,7 +962,6 @@ more_than_1
 
 - No entanto, se você voltar ao seu notebook depois de algumas horas, ele normalmente “esquecerá” todas as variáveis ​​que conhecia.
 - Quando isso acontecer, você precisará executar novamente as células do seu notebook.
-- Veja [Navigating DataHub and Jupyter Notebooks](https://www.youtube.com/watch?v=Hq8VaNirDRQ) para mais.
 
 ## Resumo, da próxima vez
 
