@@ -16,7 +16,7 @@ seo:
 
 {: .no_toc .mb-2 }
 
-![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/03-Expressoes/images/babypanda.webp)
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/babypanda.webp)
 
 ## Ementa
 
