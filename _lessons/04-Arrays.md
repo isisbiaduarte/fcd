@@ -1,29 +1,40 @@
-# Aula 3 – Strings e Arrays
-## DSC 10, inverno de 2023
+---
+layout: page
+title: Strings e Arrays
+nav_order: 4
+---
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/04-Arrays.ipynb)
 
-### Anúncios
+# Tópico 4 - Strings e Arrays
 
-- O laboratório 0 foi lançado e será lançado **Sábado às 23h59**.
-- Contém um vídeo 🎥 no final, [Navigating DataHub and Jupyter Notebooks](https://www.youtube.com/watch?v=Hq8VaNirDRQ). Assistir a este vídeo deve ser um investimento valioso do seu tempo! ⌚
-- Preencha o [Beginning of Quarter Survey](https://forms.gle/G4zSmeHNkScebbZ28).
-- Ter uma questão? Entre em contato conosco em [EdStem](https://edstem.org/us/courses/33310/discussion) em vez de e-mail.
+{: .no_toc .mb-2 }
+
+Vetores (Arrays) representam um conjunto básico de dados. Vamos aprender como usar os mesmos.
+{: .fs-6 .fw-300 }
+
+{: .no_toc .text-delta }
+Resultados Esperados
+
+1. Entender tipos em Python, em particular a String
+1. Saber o que é a biblioteca [numpy](https://numpy.org/)
+1. Conhecimento básico de manipulação de arrays
 
 ### Recursos 🤝
 
 - Estamos cobrindo **muito** conteúdo muito rapidamente. Se você está sobrecarregado, saiba que estamos aqui para apoiá-lo!
-- Horário comercial e EdStem são seus amigos!
-- Lembre-se de verificar [Resources tab of the course website](https://dsc10.com/resources/) para recursos de programação.
+- Os monitores foram definidos. Olhem a mensagem no moodle.
+- Procurem o professor depois da aula!
 
 ### Agenda
 
-- Cordas. 🧶
+- Strings
 - Listas.
 - Matrizes.
 - Gamas.
 
-## Cordas 🧶
+## Strings ou Texto
 
-### Cordas 🧶
+### Strings
 
 - Uma string é um trecho de texto de qualquer comprimento.
 - Em Python, as strings são colocadas entre aspas simples ou duplas.
@@ -203,16 +214,9 @@ Aspas simples e aspas duplas geralmente são intercambiáveis, exceto quando a p
 
 ```python
 #In: 
-'my string's full of apostrophes!'
+# a linha abaixo gera um erro, descomente e teste
+# 'my string's full of apostrophes!'
 ```
-
-
-      Cell In[14], line 1
-        'my string's full of apostrophes!'
-                                         ^
-    SyntaxError: unterminated string literal (detected at line 1)
-
-
 
 
 ```python
@@ -368,7 +372,7 @@ int('baby panda')
     ValueError: invalid literal for int() with base 10: 'baby panda'
 
 
-### Verificação de conceito ✅ – Resposta em [cc.dsc10.com](http://cc.dsc10.com)
+### Verificação de conceito ✅
 
 Suponha que você executou as seguintes instruções:
 
@@ -389,12 +393,6 @@ C.`str(x) + int(y)`
 D. `str (x) + z`
 
 E. Todos eles têm erros
-
-
-```python
-#In: 
-
-```
 
 ## Listas
 
@@ -537,15 +535,15 @@ mixed_list
 
 ## Matrizes
 
-###NumPy
+### NumPy
 
-<centro>
-<img src='images/numpy.png' width=400>
+<center>
+<img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/04-Arrays/numpy.png' width=400>
 </center>
 
 - NumPy (pronuncia-se "num pie") é uma biblioteca (módulo) Python que fornece suporte para **arrays** e operações neles.
 
-- A biblioteca `babypandas`, sobre a qual você aprenderá na próxima semana, anda de mãos dadas com o NumPy.
+- A biblioteca `babypandas`, sobre a qual você aprenderá no próximo tópico, anda de mãos dadas com o NumPy.
 - NumPy é muito usado no mundo real.
 
 - Para usar `numpy`, precisamos importá-lo. Geralmente é importado como `np` (mas não precisa ser!)
@@ -560,7 +558,7 @@ import numpy as np
 
 Pense nos arrays NumPy (apenas "arrays" de agora em diante) como listas sofisticadas e mais rápidas.
 
-<center><img src="images/squid.png" width=30%></center>
+<center><img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/04-Arrays/squid.png" width=30%></center>
 
 Para criar um array, passamos uma lista como entrada para a função `np.array`.
 
@@ -577,8 +575,8 @@ np.array([4, 9, 1, 2])
 
 
 
-<centro>
-<img src='images/brackets.png' width=50%>
+<center>
+<img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/04-Arrays/brackets.png' width=50%>
 </center>
 
 
@@ -626,7 +624,7 @@ np.array(temperature_list)
 
 Quando as pessoas ficam em fila, cada pessoa tem uma posição.
 
-<center><img src="images/position.png" width=50%></center>
+<center><img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/04-Arrays/position.png" width=50%></center>
 
 Da mesma forma, cada elemento de um array (e lista) possui uma posição.
 
@@ -1180,11 +1178,11 @@ np.arange(1, -10, -3)
 
 ### Atividade
 
-🎉 Parabéns! 🎉 Você ganhou na loteria 💰. Veja como funciona o seu pagamento: no primeiro dia de setembro, você receberá \\$0,01. A cada dia seguinte, seu salário dobra, então no segundo dia você recebe \\$ 0,02, no terceiro dia você recebe \\$ 0,04, no quarto dia você recebe \\$ 0,08 e assim por diante.
+🎉 Parabéns! 🎉 Você ganhou na loteria 💰. Veja como funciona o seu pagamento: no primeiro dia de setembro, você receberá 0,01. A cada dia seguinte, seu salário dobra, então no segundo dia você recebe 0,02, no terceiro dia você recebe 0,04, no quarto dia você recebe 0,08 e assim por diante.
 
 Setembro tem 30 dias.
 
-Escreva uma **expressão de uma linha** que use os números `2` e `30`, junto com a função `np.arange` e o método `.sum()`, que calcula o valor total **em dólares ** você será pago em setembro.
+Escreva uma **expressão de uma linha** que use os números `2` e `30`, junto com a função `np.arange` e o método `.sum()`, que calcula o valor total **em dólares** você será pago em setembro.
 
 
 ```python
