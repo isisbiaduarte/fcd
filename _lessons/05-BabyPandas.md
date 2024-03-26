@@ -13,10 +13,13 @@ Hoje, usaremos um conjunto de dados real e muitas perguntas motivadoras para ilu
 
 #### Observação:
 
-- Alguns links importantes daqui para frente:
-  -[Comandos e Conceitos Úteis](https://flaviovdf.io/fcd/guiarapido/).
-  -[`babypandas` notes](https://notes.dsc10.com).
-  -[`babypandas` documentation](https://babypandas.readthedocs.io/en/latest/index.html).
+Alguns links importantes daqui para frente:
+
+-[Comandos e Conceitos Úteis](https://flaviovdf.io/fcd/guiarapido/).
+
+-[`babypandas` notes](https://notes.dsc10.com).
+
+-[`babypandas` documentation](https://babypandas.readthedocs.io/en/latest/index.html).
 
 ## Tabelas de Dados
 
@@ -52,7 +55,7 @@ Hoje, usaremos um conjunto de dados real e muitas perguntas motivadoras para ilu
 
 
 ```python
-#In: 
+#In:
 import babypandas as bpd
 import numpy as np
 ```
@@ -72,158 +75,9 @@ Podemos ler em um CSV usando `bpd.read_csv(...)`. Forneça o caminho para um arq
 
 
 ```python
-#In: 
+#In:
 afonso_pena = bpd.read_csv('afonso_pena.csv')
-afonso_pena
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
-      <th>CODIGO_VAGA</th>
-      <th>NOME_FANTASIA</th>
-      <th>NOME_FEIRANTE</th>
-      <th>NOME_PREPOSTO</th>
-      <th>NOME_SETOR</th>
-      <th>NUMERO_PRODUTOS_CADASTRADOS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>83</td>
-      <td>F.F2.V016</td>
-      <td>BARRACA CARMEN EMMANUEL DOS SANTOS SILVA</td>
-      <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
-      <td>JANA FONSECA VIEIRA</td>
-      <td>Criança</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>84</td>
-      <td>G.F3.V052</td>
-      <td>BARRACA CARMEN FERNANDA ROCHA DE ALCANTARA</td>
-      <td>CARMEN FERNANDA ROCHA DE ALCANTARA</td>
-      <td>KARINA RODRIGUES BRANDORFI</td>
-      <td>Bijouterias</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>85</td>
-      <td>E.F4.V003</td>
-      <td>BARRACA CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
-      <td>CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
-      <td>BARBARA ISABELLE CARVALHO DE PAULA</td>
-      <td>Vestuário Infantil</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>86</td>
-      <td>E.F2.V004</td>
-      <td>BARRACA CECÍLIA PAGANO NEVES SALAZAR</td>
-      <td>CECÍLIA PAGANO NEVES SALAZAR</td>
-      <td>GISELE PAGANO NEVES SALAZAR</td>
-      <td>Vestuário Infantil</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>87</td>
-      <td>D.F2.V016</td>
-      <td>BARRACA CÉLIA APARECIDA DE SOUZA</td>
-      <td>CÉLIA APARECIDA DE SOUZA</td>
-      <td>EDSON PIRES DE SOUZA</td>
-      <td>Vestuário</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>1524</th>
-      <td>1525</td>
-      <td>D.F1.V007</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Vestuário</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1525</th>
-      <td>1526</td>
-      <td>C.F4.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Cama, Mesa, Banho e Tapeçaria</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1526</th>
-      <td>1527</td>
-      <td>F.F1.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Criança</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1527</th>
-      <td>1528</td>
-      <td>Y.F2.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Alimentação</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1528</th>
-      <td>1529</td>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-<p>1529 rows × 7 columns</p>
-</div>
-
-
 
 ### Estrutura de um DataFrame
 
@@ -238,7 +92,7 @@ afonso_pena
 
 
 ```python
-#In: 
+#In:
 afonso_pena
 ```
 
@@ -269,7 +123,9 @@ afonso_pena
       <th>NOME_FEIRANTE</th>
       <th>NOME_PREPOSTO</th>
       <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
       <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
     </tr>
   </thead>
   <tbody>
@@ -281,7 +137,9 @@ afonso_pena
       <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
       <td>JANA FONSECA VIEIRA</td>
       <td>Criança</td>
-      <td>5</td>
+      <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>1</th>
@@ -291,7 +149,9 @@ afonso_pena
       <td>CARMEN FERNANDA ROCHA DE ALCANTARA</td>
       <td>KARINA RODRIGUES BRANDORFI</td>
       <td>Bijouterias</td>
-      <td>5</td>
+      <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>2</th>
@@ -301,7 +161,9 @@ afonso_pena
       <td>CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
       <td>BARBARA ISABELLE CARVALHO DE PAULA</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>VESTIDO, CONJUNTO, MACACÃO</td>
+      <td>3.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>3</th>
@@ -311,7 +173,9 @@ afonso_pena
       <td>CECÍLIA PAGANO NEVES SALAZAR</td>
       <td>GISELE PAGANO NEVES SALAZAR</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>MACACÃO, BLUSA, SAPATINHO</td>
+      <td>3.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>4</th>
@@ -321,7 +185,9 @@ afonso_pena
       <td>CÉLIA APARECIDA DE SOUZA</td>
       <td>EDSON PIRES DE SOUZA</td>
       <td>Vestuário</td>
-      <td>7</td>
+      <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
+      <td>7.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>...</th>
@@ -332,60 +198,72 @@ afonso_pena
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>1524</th>
-      <td>1525</td>
-      <td>D.F1.V007</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
+      <th>1245</th>
+      <td>1350</td>
+      <td>G.F4.V014</td>
+      <td>BARRACA HELCIO LICIO SILVA</td>
+      <td>HELCIO LICIO SILVA</td>
+      <td>GRAZIELA CRISTINA RAMALHO SILVA</td>
+      <td>Bijouterias</td>
+      <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
+    </tr>
+    <tr>
+      <th>1246</th>
+      <td>1351</td>
+      <td>J.F1.V004</td>
+      <td>BARRACA DIEGO DOS SANTOS DIAS</td>
+      <td>DIEGO DOS SANTOS DIAS</td>
+      <td>CELSO DE SOUZA LINHARES</td>
+      <td>Calçados</td>
+      <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
+      <td>3.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>1247</th>
+      <td>1352</td>
+      <td>D.F4.V050</td>
+      <td>BARRACA JAIR CORREA</td>
+      <td>JAIR CORREA</td>
+      <td>Keli Aparecida Batista Correa</td>
       <td>Vestuário</td>
-      <td>1</td>
+      <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
+      <td>5.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
-      <th>1525</th>
-      <td>1526</td>
-      <td>C.F4.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Cama, Mesa, Banho e Tapeçaria</td>
-      <td>1</td>
+      <th>1248</th>
+      <td>1353</td>
+      <td>G.F2.V010</td>
+      <td>BARRACA SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>ANA PAULA FAUSTINA DE SOUZA</td>
+      <td>Bijouterias</td>
+      <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
-      <th>1526</th>
-      <td>1527</td>
-      <td>F.F1.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Criança</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1527</th>
-      <td>1528</td>
-      <td>Y.F2.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Alimentação</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1528</th>
-      <td>1529</td>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
+      <th>1249</th>
+      <td>1354</td>
+      <td>G.F1.V061</td>
+      <td>BARRACA REGINA GARCIA FERREIRA</td>
+      <td>REGINA GARCIA FERREIRA</td>
+      <td>Rejane Garcia Ferreira Clemente</td>
+      <td>Bijouterias</td>
+      <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
+      <td>4.0</td>
+      <td>3.60505</td>
     </tr>
   </tbody>
 </table>
-<p>1529 rows × 7 columns</p>
+<p>1250 rows × 9 columns</p>
 </div>
 
 
@@ -399,7 +277,7 @@ afonso_pena
 
 
 ```python
-#In: 
+#In:
 afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
 ```
 
@@ -429,10 +307,14 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <th>NOME_FEIRANTE</th>
       <th>NOME_PREPOSTO</th>
       <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
       <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
     </tr>
     <tr>
       <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -449,7 +331,9 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
       <td>JANA FONSECA VIEIRA</td>
       <td>Criança</td>
-      <td>5</td>
+      <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>84</th>
@@ -458,7 +342,9 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>CARMEN FERNANDA ROCHA DE ALCANTARA</td>
       <td>KARINA RODRIGUES BRANDORFI</td>
       <td>Bijouterias</td>
-      <td>5</td>
+      <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>85</th>
@@ -467,7 +353,9 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
       <td>BARBARA ISABELLE CARVALHO DE PAULA</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>VESTIDO, CONJUNTO, MACACÃO</td>
+      <td>3.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>86</th>
@@ -476,7 +364,9 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>CECÍLIA PAGANO NEVES SALAZAR</td>
       <td>GISELE PAGANO NEVES SALAZAR</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>MACACÃO, BLUSA, SAPATINHO</td>
+      <td>3.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>87</th>
@@ -485,7 +375,9 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>CÉLIA APARECIDA DE SOUZA</td>
       <td>EDSON PIRES DE SOUZA</td>
       <td>Vestuário</td>
-      <td>7</td>
+      <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
+      <td>7.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>...</th>
@@ -495,62 +387,74 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>1525</th>
-      <td>D.F1.V007</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
+      <th>1350</th>
+      <td>G.F4.V014</td>
+      <td>BARRACA HELCIO LICIO SILVA</td>
+      <td>HELCIO LICIO SILVA</td>
+      <td>GRAZIELA CRISTINA RAMALHO SILVA</td>
+      <td>Bijouterias</td>
+      <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
+    </tr>
+    <tr>
+      <th>1351</th>
+      <td>J.F1.V004</td>
+      <td>BARRACA DIEGO DOS SANTOS DIAS</td>
+      <td>DIEGO DOS SANTOS DIAS</td>
+      <td>CELSO DE SOUZA LINHARES</td>
+      <td>Calçados</td>
+      <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
+      <td>3.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>1352</th>
+      <td>D.F4.V050</td>
+      <td>BARRACA JAIR CORREA</td>
+      <td>JAIR CORREA</td>
+      <td>Keli Aparecida Batista Correa</td>
       <td>Vestuário</td>
-      <td>1</td>
+      <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
+      <td>5.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
-      <th>1526</th>
-      <td>C.F4.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Cama, Mesa, Banho e Tapeçaria</td>
-      <td>1</td>
+      <th>1353</th>
+      <td>G.F2.V010</td>
+      <td>BARRACA SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>ANA PAULA FAUSTINA DE SOUZA</td>
+      <td>Bijouterias</td>
+      <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
-      <th>1527</th>
-      <td>F.F1.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Criança</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1528</th>
-      <td>Y.F2.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Alimentação</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1529</th>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
+      <th>1354</th>
+      <td>G.F1.V061</td>
+      <td>BARRACA REGINA GARCIA FERREIRA</td>
+      <td>REGINA GARCIA FERREIRA</td>
+      <td>Rejane Garcia Ferreira Clemente</td>
+      <td>Bijouterias</td>
+      <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
+      <td>4.0</td>
+      <td>3.60505</td>
     </tr>
   </tbody>
 </table>
-<p>1529 rows × 6 columns</p>
+<p>1250 rows × 8 columns</p>
 </div>
 
 
 
 
 ```python
-#In: 
+#In:
 afonso_pena
 ```
 
@@ -581,7 +485,9 @@ afonso_pena
       <th>NOME_FEIRANTE</th>
       <th>NOME_PREPOSTO</th>
       <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
       <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
     </tr>
   </thead>
   <tbody>
@@ -593,7 +499,9 @@ afonso_pena
       <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
       <td>JANA FONSECA VIEIRA</td>
       <td>Criança</td>
-      <td>5</td>
+      <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>1</th>
@@ -603,7 +511,9 @@ afonso_pena
       <td>CARMEN FERNANDA ROCHA DE ALCANTARA</td>
       <td>KARINA RODRIGUES BRANDORFI</td>
       <td>Bijouterias</td>
-      <td>5</td>
+      <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>2</th>
@@ -613,7 +523,9 @@ afonso_pena
       <td>CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
       <td>BARBARA ISABELLE CARVALHO DE PAULA</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>VESTIDO, CONJUNTO, MACACÃO</td>
+      <td>3.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>3</th>
@@ -623,7 +535,9 @@ afonso_pena
       <td>CECÍLIA PAGANO NEVES SALAZAR</td>
       <td>GISELE PAGANO NEVES SALAZAR</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>MACACÃO, BLUSA, SAPATINHO</td>
+      <td>3.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>4</th>
@@ -633,7 +547,9 @@ afonso_pena
       <td>CÉLIA APARECIDA DE SOUZA</td>
       <td>EDSON PIRES DE SOUZA</td>
       <td>Vestuário</td>
-      <td>7</td>
+      <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
+      <td>7.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>...</th>
@@ -644,67 +560,79 @@ afonso_pena
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>1524</th>
-      <td>1525</td>
-      <td>D.F1.V007</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
+      <th>1245</th>
+      <td>1350</td>
+      <td>G.F4.V014</td>
+      <td>BARRACA HELCIO LICIO SILVA</td>
+      <td>HELCIO LICIO SILVA</td>
+      <td>GRAZIELA CRISTINA RAMALHO SILVA</td>
+      <td>Bijouterias</td>
+      <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
+    </tr>
+    <tr>
+      <th>1246</th>
+      <td>1351</td>
+      <td>J.F1.V004</td>
+      <td>BARRACA DIEGO DOS SANTOS DIAS</td>
+      <td>DIEGO DOS SANTOS DIAS</td>
+      <td>CELSO DE SOUZA LINHARES</td>
+      <td>Calçados</td>
+      <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
+      <td>3.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>1247</th>
+      <td>1352</td>
+      <td>D.F4.V050</td>
+      <td>BARRACA JAIR CORREA</td>
+      <td>JAIR CORREA</td>
+      <td>Keli Aparecida Batista Correa</td>
       <td>Vestuário</td>
-      <td>1</td>
+      <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
+      <td>5.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
-      <th>1525</th>
-      <td>1526</td>
-      <td>C.F4.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Cama, Mesa, Banho e Tapeçaria</td>
-      <td>1</td>
+      <th>1248</th>
+      <td>1353</td>
+      <td>G.F2.V010</td>
+      <td>BARRACA SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>ANA PAULA FAUSTINA DE SOUZA</td>
+      <td>Bijouterias</td>
+      <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
-      <th>1526</th>
-      <td>1527</td>
-      <td>F.F1.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Criança</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1527</th>
-      <td>1528</td>
-      <td>Y.F2.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Alimentação</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1528</th>
-      <td>1529</td>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
+      <th>1249</th>
+      <td>1354</td>
+      <td>G.F1.V061</td>
+      <td>BARRACA REGINA GARCIA FERREIRA</td>
+      <td>REGINA GARCIA FERREIRA</td>
+      <td>Rejane Garcia Ferreira Clemente</td>
+      <td>Bijouterias</td>
+      <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
+      <td>4.0</td>
+      <td>3.60505</td>
     </tr>
   </tbody>
 </table>
-<p>1529 rows × 7 columns</p>
+<p>1250 rows × 9 columns</p>
 </div>
 
 
 
 
 ```python
-#In: 
+#In:
 afonso_pena = afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
 afonso_pena
 ```
@@ -735,10 +663,14 @@ afonso_pena
       <th>NOME_FEIRANTE</th>
       <th>NOME_PREPOSTO</th>
       <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
       <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
     </tr>
     <tr>
       <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -755,7 +687,9 @@ afonso_pena
       <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
       <td>JANA FONSECA VIEIRA</td>
       <td>Criança</td>
-      <td>5</td>
+      <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>84</th>
@@ -764,7 +698,9 @@ afonso_pena
       <td>CARMEN FERNANDA ROCHA DE ALCANTARA</td>
       <td>KARINA RODRIGUES BRANDORFI</td>
       <td>Bijouterias</td>
-      <td>5</td>
+      <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>85</th>
@@ -773,7 +709,9 @@ afonso_pena
       <td>CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
       <td>BARBARA ISABELLE CARVALHO DE PAULA</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>VESTIDO, CONJUNTO, MACACÃO</td>
+      <td>3.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>86</th>
@@ -782,7 +720,9 @@ afonso_pena
       <td>CECÍLIA PAGANO NEVES SALAZAR</td>
       <td>GISELE PAGANO NEVES SALAZAR</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>MACACÃO, BLUSA, SAPATINHO</td>
+      <td>3.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>87</th>
@@ -791,7 +731,9 @@ afonso_pena
       <td>CÉLIA APARECIDA DE SOUZA</td>
       <td>EDSON PIRES DE SOUZA</td>
       <td>Vestuário</td>
-      <td>7</td>
+      <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
+      <td>7.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>...</th>
@@ -801,55 +743,67 @@ afonso_pena
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>1525</th>
-      <td>D.F1.V007</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
+      <th>1350</th>
+      <td>G.F4.V014</td>
+      <td>BARRACA HELCIO LICIO SILVA</td>
+      <td>HELCIO LICIO SILVA</td>
+      <td>GRAZIELA CRISTINA RAMALHO SILVA</td>
+      <td>Bijouterias</td>
+      <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
+    </tr>
+    <tr>
+      <th>1351</th>
+      <td>J.F1.V004</td>
+      <td>BARRACA DIEGO DOS SANTOS DIAS</td>
+      <td>DIEGO DOS SANTOS DIAS</td>
+      <td>CELSO DE SOUZA LINHARES</td>
+      <td>Calçados</td>
+      <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
+      <td>3.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>1352</th>
+      <td>D.F4.V050</td>
+      <td>BARRACA JAIR CORREA</td>
+      <td>JAIR CORREA</td>
+      <td>Keli Aparecida Batista Correa</td>
       <td>Vestuário</td>
-      <td>1</td>
+      <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
+      <td>5.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
-      <th>1526</th>
-      <td>C.F4.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Cama, Mesa, Banho e Tapeçaria</td>
-      <td>1</td>
+      <th>1353</th>
+      <td>G.F2.V010</td>
+      <td>BARRACA SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>ANA PAULA FAUSTINA DE SOUZA</td>
+      <td>Bijouterias</td>
+      <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
-      <th>1527</th>
-      <td>F.F1.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Criança</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1528</th>
-      <td>Y.F2.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Alimentação</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1529</th>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
+      <th>1354</th>
+      <td>G.F1.V061</td>
+      <td>BARRACA REGINA GARCIA FERREIRA</td>
+      <td>REGINA GARCIA FERREIRA</td>
+      <td>Rejane Garcia Ferreira Clemente</td>
+      <td>Bijouterias</td>
+      <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
+      <td>4.0</td>
+      <td>3.60505</td>
     </tr>
   </tbody>
 </table>
-<p>1529 rows × 6 columns</p>
+<p>1250 rows × 8 columns</p>
 </div>
 
 
@@ -863,21 +817,21 @@ afonso_pena
 
 
 ```python
-#In: 
-# There were 7 columns before, but one of them became the index, and the index is not a column!
+#In:
+# There were 9 columns before, but one of them became the index, and the index is not a column!
 afonso_pena.shape
 ```
 
 
 
 
-    (1529, 6)
+    (1250, 8)
 
 
 
 
 ```python
-#In: 
+#In:
 # Number of rows
 afonso_pena.shape[0]
 ```
@@ -885,13 +839,13 @@ afonso_pena.shape[0]
 
 
 
-    1529
+    1250
 
 
 
 
 ```python
-#In: 
+#In:
 # Number of columns
 afonso_pena.shape[1]
 ```
@@ -899,7 +853,7 @@ afonso_pena.shape[1]
 
 
 
-    6
+    8
 
 
 
@@ -909,7 +863,7 @@ afonso_pena.shape[1]
 
 ### Encontrando o total de solicitações
 
-- **Pergunta:** Como sumarizar a quantidade de colunas?
+- **Pergunta:** Como sumarizar uma coluna?
 - Obtenha a coluna
 - Agregue o valor
 
@@ -922,7 +876,7 @@ afonso_pena.shape[1]
 
 
 ```python
-#In: 
+#In:
 afonso_pena
 ```
 
@@ -952,10 +906,14 @@ afonso_pena
       <th>NOME_FEIRANTE</th>
       <th>NOME_PREPOSTO</th>
       <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
       <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
     </tr>
     <tr>
       <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -972,7 +930,9 @@ afonso_pena
       <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
       <td>JANA FONSECA VIEIRA</td>
       <td>Criança</td>
-      <td>5</td>
+      <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>84</th>
@@ -981,7 +941,9 @@ afonso_pena
       <td>CARMEN FERNANDA ROCHA DE ALCANTARA</td>
       <td>KARINA RODRIGUES BRANDORFI</td>
       <td>Bijouterias</td>
-      <td>5</td>
+      <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
+      <td>5.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>85</th>
@@ -990,7 +952,9 @@ afonso_pena
       <td>CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
       <td>BARBARA ISABELLE CARVALHO DE PAULA</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>VESTIDO, CONJUNTO, MACACÃO</td>
+      <td>3.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>86</th>
@@ -999,7 +963,9 @@ afonso_pena
       <td>CECÍLIA PAGANO NEVES SALAZAR</td>
       <td>GISELE PAGANO NEVES SALAZAR</td>
       <td>Vestuário Infantil</td>
-      <td>3</td>
+      <td>MACACÃO, BLUSA, SAPATINHO</td>
+      <td>3.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>87</th>
@@ -1008,7 +974,9 @@ afonso_pena
       <td>CÉLIA APARECIDA DE SOUZA</td>
       <td>EDSON PIRES DE SOUZA</td>
       <td>Vestuário</td>
-      <td>7</td>
+      <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
+      <td>7.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1018,62 +986,74 @@ afonso_pena
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>1525</th>
-      <td>D.F1.V007</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
+      <th>1350</th>
+      <td>G.F4.V014</td>
+      <td>BARRACA HELCIO LICIO SILVA</td>
+      <td>HELCIO LICIO SILVA</td>
+      <td>GRAZIELA CRISTINA RAMALHO SILVA</td>
+      <td>Bijouterias</td>
+      <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
+    </tr>
+    <tr>
+      <th>1351</th>
+      <td>J.F1.V004</td>
+      <td>BARRACA DIEGO DOS SANTOS DIAS</td>
+      <td>DIEGO DOS SANTOS DIAS</td>
+      <td>CELSO DE SOUZA LINHARES</td>
+      <td>Calçados</td>
+      <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
+      <td>3.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>1352</th>
+      <td>D.F4.V050</td>
+      <td>BARRACA JAIR CORREA</td>
+      <td>JAIR CORREA</td>
+      <td>Keli Aparecida Batista Correa</td>
       <td>Vestuário</td>
-      <td>1</td>
+      <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
+      <td>5.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
-      <th>1526</th>
-      <td>C.F4.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Cama, Mesa, Banho e Tapeçaria</td>
-      <td>1</td>
+      <th>1353</th>
+      <td>G.F2.V010</td>
+      <td>BARRACA SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>ANA PAULA FAUSTINA DE SOUZA</td>
+      <td>Bijouterias</td>
+      <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
-      <th>1527</th>
-      <td>F.F1.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Criança</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1528</th>
-      <td>Y.F2.V006</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Alimentação</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1529</th>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
+      <th>1354</th>
+      <td>G.F1.V061</td>
+      <td>BARRACA REGINA GARCIA FERREIRA</td>
+      <td>REGINA GARCIA FERREIRA</td>
+      <td>Rejane Garcia Ferreira Clemente</td>
+      <td>Bijouterias</td>
+      <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
+      <td>4.0</td>
+      <td>3.60505</td>
     </tr>
   </tbody>
 </table>
-<p>1529 rows × 6 columns</p>
+<p>1250 rows × 8 columns</p>
 </div>
 
 
 
 
 ```python
-#In: 
+#In:
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 ```
 
@@ -1081,18 +1061,18 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 
 
     ID_FEIRA_AFONSO_PENA_BARRACA
-    83      5
-    84      5
-    85      3
-    86      3
-    87      7
-           ..
-    1525    1
-    1526    1
-    1527    1
-    1528    1
-    1529    1
-    Name: NUMERO_PRODUTOS_CADASTRADOS, Length: 1529, dtype: int64
+    83      5.0
+    84      5.0
+    85      3.0
+    86      3.0
+    87      7.0
+           ...
+    1350    7.0
+    1351    3.0
+    1352    5.0
+    1353    7.0
+    1354    4.0
+    Name: NUMERO_PRODUTOS_CADASTRADOS, Length: 1250, dtype: float64
 
 
 
@@ -1103,7 +1083,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 
 
 ```python
-#In: 
+#In:
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 ```
 
@@ -1111,65 +1091,65 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 
 
     ID_FEIRA_AFONSO_PENA_BARRACA
-    83      5
-    84      5
-    85      3
-    86      3
-    87      7
-           ..
-    1525    1
-    1526    1
-    1527    1
-    1528    1
-    1529    1
-    Name: NUMERO_PRODUTOS_CADASTRADOS, Length: 1529, dtype: int64
+    83      5.0
+    84      5.0
+    85      3.0
+    86      3.0
+    87      7.0
+           ...
+    1350    7.0
+    1351    3.0
+    1352    5.0
+    1353    7.0
+    1354    4.0
+    Name: NUMERO_PRODUTOS_CADASTRADOS, Length: 1250, dtype: float64
 
 
 
-#### Passo 2 – Calculando o total
+#### Etapa 2 – Calculando o total
 
 - Assim como acontece com os arrays, podemos realizar operações aritméticas nas séries
 
 
 ```python
-#In: 
+#In:
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').sum()
 ```
 
 
 
 
-    8727
+    7457.0
 
 
 
 
 ```python
-#In: 
+#In:
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').max()
 ```
 
 
 
 
-    21
+    21.0
 
 
 
 
 ```python
-#In: 
+#In:
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').mean()
 ```
 
 
 
 
-    5.707652060170045
+    5.9656
 
 
 
-## Exemplo 3: Quais feirantes vendem mais produtos?
+## Exemplo 2: Quais feirantes vendem mais produtos?
 
 **Conceitos principais**: Classificação. Acessando usando posições inteiras.
 
@@ -1181,7 +1161,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').mean()
 
 
 ```python
-#In: 
+#In:
 afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
 ```
 
@@ -1211,10 +1191,14 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <th>NOME_FEIRANTE</th>
       <th>NOME_PREPOSTO</th>
       <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
       <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
     </tr>
     <tr>
       <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -1225,49 +1209,59 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
   </thead>
   <tbody>
     <tr>
-      <th>1529</th>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
+      <th>545</th>
+      <td>Y.F1.V027</td>
+      <td>BARRACA NATALICE BARBOSA DA CONCEIÇÃO</td>
+      <td>NATALICE BARBOSA DA CONCEIÇÃO</td>
+      <td>WALDIR BARBOSA DA SILVA</td>
+      <td>Alimentação</td>
+      <td>ACARAJÉ</td>
+      <td>1.0</td>
+      <td>10.24465</td>
     </tr>
     <tr>
-      <th>1148</th>
-      <td>B.F2.V012</td>
-      <td>BARRACA ELVIDIO ROCHA SILVA</td>
-      <td>ELVIDIO ROCHA SILVA</td>
-      <td>ADRIANE GISELLE DE ARAÚJO</td>
-      <td>Decoração e Utilidades</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1142</th>
-      <td>E.F1.V025</td>
-      <td>BARRACA MARIA MARTHA DE FARIA STEIJVERS</td>
-      <td>MARIA MARTHA DE FARIA STEIJVERS</td>
-      <td>CARMEN LUCIA LOPES DE FARIA</td>
-      <td>Vestuário Infantil</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>346</th>
-      <td>I.F2.V021</td>
-      <td>BARRACA LUZIA FRADE RIBEIRO</td>
-      <td>LUZIA FRADE RIBEIRO</td>
-      <td>ALEXANDRA PEREIRA SILVA</td>
-      <td>Cintos, Bolsas e Acessórios</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1029</th>
-      <td>P.F2.V005</td>
-      <td>BARRACA VALTER APARECIDA DA SILVA</td>
-      <td>VALTER APARECIDA DA SILVA</td>
-      <td>NaN</td>
+      <th>1019</th>
+      <td>P.F1.V007</td>
+      <td>BARRACA EVANDRO TADEU DE OLIVEIRA</td>
+      <td>EVANDRO TADEU DE OLIVEIRA</td>
+      <td>JONH WAINE DE ALMEIDA SANTOS</td>
       <td>Artes e Pintura</td>
-      <td>1</td>
+      <td>PINTURA ACRÍLICA</td>
+      <td>1.0</td>
+      <td>7.25125</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>E.F4.V001</td>
+      <td>BARRACA DORA LÚCIA BATISTA  CUNHA</td>
+      <td>DORA LÚCIA BATISTA  CUNHA</td>
+      <td>CRISTINA CUNHA ESPERANCA</td>
+      <td>Vestuário Infantil</td>
+      <td>VESTIDO</td>
+      <td>1.0</td>
+      <td>3.60850</td>
+    </tr>
+    <tr>
+      <th>1331</th>
+      <td>E.F2.V024</td>
+      <td>BARRACA VALERIA JANINE VILELA RIBEIRO</td>
+      <td>VALERIA JANINE VILELA RIBEIRO</td>
+      <td>AGDA GIOVANNA VILELA</td>
+      <td>Vestuário Infantil</td>
+      <td>VESTIDO</td>
+      <td>1.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>387</th>
+      <td>I.F3.V031</td>
+      <td>BARRACA MARIA ANGELICA DOS SANTOS PINTO</td>
+      <td>MARIA ANGELICA DOS SANTOS PINTO</td>
+      <td>PABLO TORQUATO SILVA</td>
+      <td>Cintos, Bolsas e Acessórios</td>
+      <td>BOLSA</td>
+      <td>1.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1277,24 +1271,8 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>...</td>
       <td>...</td>
       <td>...</td>
-    </tr>
-    <tr>
-      <th>336</th>
-      <td>B.F1.V001</td>
-      <td>BARRACA LUCY DOS SANTOS SEBASTIAO</td>
-      <td>LUCY DOS SANTOS SEBASTIAO</td>
-      <td>LAURO MARTINS DOS SANTOS</td>
-      <td>Decoração e Utilidades</td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>1406</th>
-      <td>Z.F1.V007</td>
-      <td>BARRACA FRANCINERE AMARAL CARDOSO RIBEIRO DE S...</td>
-      <td>FRANCINERE AMARAL CARDOSO RIBEIRO DE SOUZA</td>
-      <td>RAYKARD AGUIAR DE JESUS</td>
-      <td>Alimentação</td>
-      <td>20</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
       <th>653</th>
@@ -1303,16 +1281,31 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>SILVIA REGINA NOGUEIRA RIBEIRO</td>
       <td>LIGIA MARIA NOGUEIRA RIBEIRO</td>
       <td>Criança</td>
-      <td>20</td>
+      <td>VESTIDO, BLUSA, CONJUNTO VIROL, CALÇA, COLETE,...</td>
+      <td>20.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
-      <th>109</th>
-      <td>Y.F1.V012</td>
-      <td>BARRACA DAYSE PINTO NORBERTO</td>
-      <td>DAYSE PINTO NORBERTO</td>
-      <td>DJALMA ANTÔNIO DE FREITAS</td>
+      <th>1406</th>
+      <td>Z.F1.V007</td>
+      <td>BARRACA FRANCINERE AMARAL CARDOSO RIBEIRO DE S...</td>
+      <td>FRANCINERE AMARAL CARDOSO RIBEIRO DE SOUZA</td>
+      <td>RAYKARD AGUIAR DE JESUS</td>
       <td>Alimentação</td>
-      <td>21</td>
+      <td>CERVEJA, REFRIGERANTE, SUCO INDUSTRIALIZADO, E...</td>
+      <td>20.0</td>
+      <td>10.24465</td>
+    </tr>
+    <tr>
+      <th>336</th>
+      <td>B.F1.V001</td>
+      <td>BARRACA LUCY DOS SANTOS SEBASTIAO</td>
+      <td>LUCY DOS SANTOS SEBASTIAO</td>
+      <td>LAURO MARTINS DOS SANTOS</td>
+      <td>Decoração e Utilidades</td>
+      <td>CERÂMICA VITRIFICADA, MOLDURA, VELA, CASTIÇAL,...</td>
+      <td>20.0</td>
+      <td>6.45970</td>
     </tr>
     <tr>
       <th>491</th>
@@ -1321,18 +1314,31 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>MARILEA IMACULADA MUNIZ COSTA</td>
       <td>KELLINGTON NONATO MUNIZ COSTA</td>
       <td>Criança</td>
-      <td>21</td>
+      <td>KIT BERÇO, CORTINADO, BONECA DE PELÚCIA, SAIA ...</td>
+      <td>21.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>Y.F1.V012</td>
+      <td>BARRACA DAYSE PINTO NORBERTO</td>
+      <td>DAYSE PINTO NORBERTO</td>
+      <td>DJALMA ANTÔNIO DE FREITAS</td>
+      <td>Alimentação</td>
+      <td>CERVEJA, TORRESMO, CHIPS, AZEITONA, REFRIGERAN...</td>
+      <td>21.0</td>
+      <td>10.24465</td>
     </tr>
   </tbody>
 </table>
-<p>1529 rows × 6 columns</p>
+<p>1250 rows × 8 columns</p>
 </div>
 
 
 
 Isso classifica, mas em ordem crescente (de pequeno para grande). Queremos o contrário!
 
-#### Etapa 1 – Classificando o DataFrame em ordem *decrescente*
+#### Etapa 2 – Classificando o DataFrame em ordem *decrescente*
 
 - Use `.sort_values(by=column_name, ascending=False)` para classificar em ordem *decrescente*.
 - `ascendente` é um argumento opcional. Se omitido, será definido como `True` por padrão.
@@ -1341,7 +1347,7 @@ Isso classifica, mas em ordem crescente (de pequeno para grande). Queremos o con
 
 
 ```python
-#In: 
+#In:
 ordenado = afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS', ascending=False)
 ordenado
 ```
@@ -1372,10 +1378,14 @@ ordenado
       <th>NOME_FEIRANTE</th>
       <th>NOME_PREPOSTO</th>
       <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
       <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
     </tr>
     <tr>
       <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -1386,40 +1396,26 @@ ordenado
   </thead>
   <tbody>
     <tr>
-      <th>491</th>
-      <td>F.F2.V011</td>
-      <td>BARRACA MARILEA IMACULADA MUNIZ COSTA</td>
-      <td>MARILEA IMACULADA MUNIZ COSTA</td>
-      <td>KELLINGTON NONATO MUNIZ COSTA</td>
-      <td>Criança</td>
-      <td>21</td>
-    </tr>
-    <tr>
       <th>109</th>
       <td>Y.F1.V012</td>
       <td>BARRACA DAYSE PINTO NORBERTO</td>
       <td>DAYSE PINTO NORBERTO</td>
       <td>DJALMA ANTÔNIO DE FREITAS</td>
       <td>Alimentação</td>
-      <td>21</td>
+      <td>CERVEJA, TORRESMO, CHIPS, AZEITONA, REFRIGERAN...</td>
+      <td>21.0</td>
+      <td>10.24465</td>
     </tr>
     <tr>
-      <th>1406</th>
-      <td>Z.F1.V007</td>
-      <td>BARRACA FRANCINERE AMARAL CARDOSO RIBEIRO DE S...</td>
-      <td>FRANCINERE AMARAL CARDOSO RIBEIRO DE SOUZA</td>
-      <td>RAYKARD AGUIAR DE JESUS</td>
-      <td>Alimentação</td>
-      <td>20</td>
-    </tr>
-    <tr>
-      <th>336</th>
-      <td>B.F1.V001</td>
-      <td>BARRACA LUCY DOS SANTOS SEBASTIAO</td>
-      <td>LUCY DOS SANTOS SEBASTIAO</td>
-      <td>LAURO MARTINS DOS SANTOS</td>
-      <td>Decoração e Utilidades</td>
-      <td>20</td>
+      <th>491</th>
+      <td>F.F2.V011</td>
+      <td>BARRACA MARILEA IMACULADA MUNIZ COSTA</td>
+      <td>MARILEA IMACULADA MUNIZ COSTA</td>
+      <td>KELLINGTON NONATO MUNIZ COSTA</td>
+      <td>Criança</td>
+      <td>KIT BERÇO, CORTINADO, BONECA DE PELÚCIA, SAIA ...</td>
+      <td>21.0</td>
+      <td>3.60505</td>
     </tr>
     <tr>
       <th>653</th>
@@ -1428,7 +1424,31 @@ ordenado
       <td>SILVIA REGINA NOGUEIRA RIBEIRO</td>
       <td>LIGIA MARIA NOGUEIRA RIBEIRO</td>
       <td>Criança</td>
-      <td>20</td>
+      <td>VESTIDO, BLUSA, CONJUNTO VIROL, CALÇA, COLETE,...</td>
+      <td>20.0</td>
+      <td>3.60505</td>
+    </tr>
+    <tr>
+      <th>1406</th>
+      <td>Z.F1.V007</td>
+      <td>BARRACA FRANCINERE AMARAL CARDOSO RIBEIRO DE S...</td>
+      <td>FRANCINERE AMARAL CARDOSO RIBEIRO DE SOUZA</td>
+      <td>RAYKARD AGUIAR DE JESUS</td>
+      <td>Alimentação</td>
+      <td>CERVEJA, REFRIGERANTE, SUCO INDUSTRIALIZADO, E...</td>
+      <td>20.0</td>
+      <td>10.24465</td>
+    </tr>
+    <tr>
+      <th>336</th>
+      <td>B.F1.V001</td>
+      <td>BARRACA LUCY DOS SANTOS SEBASTIAO</td>
+      <td>LUCY DOS SANTOS SEBASTIAO</td>
+      <td>LAURO MARTINS DOS SANTOS</td>
+      <td>Decoração e Utilidades</td>
+      <td>CERÂMICA VITRIFICADA, MOLDURA, VELA, CASTIÇAL,...</td>
+      <td>20.0</td>
+      <td>6.45970</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1438,58 +1458,833 @@ ordenado
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>1493</th>
-      <td>G.F1.V031</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Bijouterias</td>
-      <td>1</td>
+      <th>647</th>
+      <td>P.F1.V023</td>
+      <td>BARRACA SÉRGIO BARBOSA DE JESUS</td>
+      <td>SÉRGIO BARBOSA DE JESUS</td>
+      <td>MARIA ADEMILDE DURAES DOS SANTOS</td>
+      <td>Artes e Pintura</td>
+      <td>PINTURA A ÓLEO</td>
+      <td>1.0</td>
+      <td>7.25125</td>
     </tr>
     <tr>
-      <th>1492</th>
-      <td>E.F2.V032</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Vestuário Infantil</td>
-      <td>1</td>
+      <th>401</th>
+      <td>I.F1.V017</td>
+      <td>BARRACA ROSÂNGELA  APARECIDA CALDEIRA DE ALVAR...</td>
+      <td>ROSÂNGELA  APARECIDA CALDEIRA DE ALVARENGA</td>
+      <td>ELZIM JOSÉ LUIZ</td>
+      <td>Cintos, Bolsas e Acessórios</td>
+      <td>BOLSA</td>
+      <td>1.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
-      <th>1491</th>
-      <td>E.F1.V034</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Vestuário Infantil</td>
-      <td>1</td>
+      <th>811</th>
+      <td>D.F3.V005</td>
+      <td>BARRACA JANE LACERDA FARIA</td>
+      <td>JANE LACERDA FARIA</td>
+      <td>WASHIMGTON GERALDO SILVA</td>
+      <td>Vestuário</td>
+      <td>BLUSA</td>
+      <td>1.0</td>
+      <td>3.60850</td>
     </tr>
     <tr>
-      <th>1490</th>
-      <td>G.F2.V035</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Bijouterias</td>
-      <td>1</td>
+      <th>1022</th>
+      <td>P.F1.V008</td>
+      <td>BARRACA IVETE EMILIA MAGALHÃES SANTOS</td>
+      <td>IVETE EMILIA MAGALHÃES SANTOS</td>
+      <td>LAZARA TEREZA RIZZO</td>
+      <td>Artes e Pintura</td>
+      <td>PINTURA A ÓLEO</td>
+      <td>1.0</td>
+      <td>7.25125</td>
     </tr>
     <tr>
-      <th>1529</th>
-      <td>A.F3.V005</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>ECONOMIA POPULAR SOLIDÁRIA</td>
-      <td>NaN</td>
-      <td>Mobilário, Flores, Arranjos, Cestaria</td>
-      <td>1</td>
+      <th>1170</th>
+      <td>I.F1.V034</td>
+      <td>BARRACA LUCIENE REIS VASCONCELOS</td>
+      <td>LUCIENE REIS VASCONCELOS</td>
+      <td>ELIZETE GENOVEVA DA SILVA</td>
+      <td>Cintos, Bolsas e Acessórios</td>
+      <td>BOLSA</td>
+      <td>1.0</td>
+      <td>3.60505</td>
     </tr>
   </tbody>
 </table>
-<p>1529 rows × 6 columns</p>
+<p>1250 rows × 8 columns</p>
 </div>
 
 
+
+## Exemplo 3: Criando novas Colunas
+
+**Conceitos Principais** Entender operações em colunas assim como em vetores
+
+### Etapa 1 - Operações aritméticas em colunas
+
+* Crie uma variável para o número de produtos cadastrados
+* Crie uma outra variável para a área
+
+
+```python
+#In:
+produtos = afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
+area = afonso_pena.get('AREA')
+```
+
+* Assim como em `numpy` (aula passada), podemos realizar operações aritméticas em colunas pandas.
+
+
+```python
+#In:
+produtos / area
+```
+
+
+
+
+    ID_FEIRA_AFONSO_PENA_BARRACA
+    83      1.385617
+    84      1.385617
+    85      0.831370
+    86      0.832166
+    87      1.941721
+              ...
+    1350    1.939864
+    1351    0.832166
+    1352    1.386943
+    1353    1.939864
+    1354    1.109555
+    Length: 1250, dtype: float64
+
+
+
+* Observe como a resposta tem a divisão dos produtos pela área, ou seja, a densidade de cada barraca
+* Além do mais, observe como temos também o índice de cada barraca
+
+### Etapa 2: Criando uma nova coluna
+
+* Agora, vamos criar a coluna densidade na nossa base de dados
+* Use `.assign(name_of_column=data_in_series)` para atribuir uma série (ou array, ou lista) a um DataFrame.
+* ⚠️ Não coloque aspas em `name_of_column`.
+* Cria um novo DataFrame!
+
+
+```python
+#In:
+
+```
+
+
+```python
+#In:
+afonso_pena.assign(DENSIDADE = produtos / area)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CODIGO_VAGA</th>
+      <th>NOME_FANTASIA</th>
+      <th>NOME_FEIRANTE</th>
+      <th>NOME_PREPOSTO</th>
+      <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
+      <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
+      <th>DENSIDADE</th>
+    </tr>
+    <tr>
+      <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>83</th>
+      <td>F.F2.V016</td>
+      <td>BARRACA CARMEN EMMANUEL DOS SANTOS SILVA</td>
+      <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
+      <td>JANA FONSECA VIEIRA</td>
+      <td>Criança</td>
+      <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
+      <td>1.385617</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>G.F3.V052</td>
+      <td>BARRACA CARMEN FERNANDA ROCHA DE ALCANTARA</td>
+      <td>CARMEN FERNANDA ROCHA DE ALCANTARA</td>
+      <td>KARINA RODRIGUES BRANDORFI</td>
+      <td>Bijouterias</td>
+      <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
+      <td>5.0</td>
+      <td>3.60850</td>
+      <td>1.385617</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>E.F4.V003</td>
+      <td>BARRACA CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
+      <td>CARMEN LÚCIA CARVALHO DE ALMEIDA</td>
+      <td>BARBARA ISABELLE CARVALHO DE PAULA</td>
+      <td>Vestuário Infantil</td>
+      <td>VESTIDO, CONJUNTO, MACACÃO</td>
+      <td>3.0</td>
+      <td>3.60850</td>
+      <td>0.831370</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>E.F2.V004</td>
+      <td>BARRACA CECÍLIA PAGANO NEVES SALAZAR</td>
+      <td>CECÍLIA PAGANO NEVES SALAZAR</td>
+      <td>GISELE PAGANO NEVES SALAZAR</td>
+      <td>Vestuário Infantil</td>
+      <td>MACACÃO, BLUSA, SAPATINHO</td>
+      <td>3.0</td>
+      <td>3.60505</td>
+      <td>0.832166</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>D.F2.V016</td>
+      <td>BARRACA CÉLIA APARECIDA DE SOUZA</td>
+      <td>CÉLIA APARECIDA DE SOUZA</td>
+      <td>EDSON PIRES DE SOUZA</td>
+      <td>Vestuário</td>
+      <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
+      <td>7.0</td>
+      <td>3.60505</td>
+      <td>1.941721</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1350</th>
+      <td>G.F4.V014</td>
+      <td>BARRACA HELCIO LICIO SILVA</td>
+      <td>HELCIO LICIO SILVA</td>
+      <td>GRAZIELA CRISTINA RAMALHO SILVA</td>
+      <td>Bijouterias</td>
+      <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
+      <td>1.939864</td>
+    </tr>
+    <tr>
+      <th>1351</th>
+      <td>J.F1.V004</td>
+      <td>BARRACA DIEGO DOS SANTOS DIAS</td>
+      <td>DIEGO DOS SANTOS DIAS</td>
+      <td>CELSO DE SOUZA LINHARES</td>
+      <td>Calçados</td>
+      <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
+      <td>3.0</td>
+      <td>3.60505</td>
+      <td>0.832166</td>
+    </tr>
+    <tr>
+      <th>1352</th>
+      <td>D.F4.V050</td>
+      <td>BARRACA JAIR CORREA</td>
+      <td>JAIR CORREA</td>
+      <td>Keli Aparecida Batista Correa</td>
+      <td>Vestuário</td>
+      <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
+      <td>5.0</td>
+      <td>3.60505</td>
+      <td>1.386943</td>
+    </tr>
+    <tr>
+      <th>1353</th>
+      <td>G.F2.V010</td>
+      <td>BARRACA SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>SIDNEY FERNANDO KNEIPP SOARES</td>
+      <td>ANA PAULA FAUSTINA DE SOUZA</td>
+      <td>Bijouterias</td>
+      <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
+      <td>7.0</td>
+      <td>3.60850</td>
+      <td>1.939864</td>
+    </tr>
+    <tr>
+      <th>1354</th>
+      <td>G.F1.V061</td>
+      <td>BARRACA REGINA GARCIA FERREIRA</td>
+      <td>REGINA GARCIA FERREIRA</td>
+      <td>Rejane Garcia Ferreira Clemente</td>
+      <td>Bijouterias</td>
+      <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
+      <td>4.0</td>
+      <td>3.60505</td>
+      <td>1.109555</td>
+    </tr>
+  </tbody>
+</table>
+<p>1250 rows × 9 columns</p>
+</div>
+
+
+
+* O código acima cria não altera os dados originais
+* Ainda temos as mesmas colunas de antes
+
+
+```python
+#In:
+afonso_pena.columns
+```
+
+
+
+
+    Index(['CODIGO_VAGA', 'NOME_FANTASIA', 'NOME_FEIRANTE', 'NOME_PREPOSTO',
+           'NOME_SETOR', 'PRODUTOS', 'NUMERO_PRODUTOS_CADASTRADOS', 'AREA'],
+          dtype='object')
+
+
+
+* Porém, podemos criar uma variável
+
+
+```python
+#In:
+afonso_pena = afonso_pena.assign(DENSIDADE = produtos / area)
+afonso_pena.get('DENSIDADE')
+```
+
+
+
+
+    ID_FEIRA_AFONSO_PENA_BARRACA
+    83      1.385617
+    84      1.385617
+    85      0.831370
+    86      0.832166
+    87      1.941721
+              ...
+    1350    1.939864
+    1351    0.832166
+    1352    1.386943
+    1353    1.939864
+    1354    1.109555
+    Name: DENSIDADE, Length: 1250, dtype: float64
+
+
+
+## Exemplo 3: Agora você responda.
+- Qual a densidade máxima?
+- Qual a densidade mínima?
+- Qual a densidade média?
+
+
+```python
+#In:
+# Suas respostas aqui!
+```
+
+## Exemplo 4: A densidade média das barracas de produtos de crianças 👶🧸?
+
+- Podemos responde a pergunda acima se tivéssemos um DataFrame composto apenas por tais barracas.
+- Como conseguimos esse DataFrame?
+
+
+```python
+#In:
+# Aqui temos os setores
+afonso_pena.get('NOME_SETOR')
+```
+
+
+
+
+    ID_FEIRA_AFONSO_PENA_BARRACA
+    83                 Criança
+    84             Bijouterias
+    85      Vestuário Infantil
+    86      Vestuário Infantil
+    87               Vestuário
+                   ...
+    1350           Bijouterias
+    1351              Calçados
+    1352             Vestuário
+    1353           Bijouterias
+    1354           Bijouterias
+    Name: NOME_SETOR, Length: 1250, dtype: object
+
+
+
+
+```python
+#In:
+# Quais deles são de crianças
+afonso_pena.get('NOME_SETOR') == 'Criança'
+```
+
+
+
+
+    ID_FEIRA_AFONSO_PENA_BARRACA
+    83       True
+    84      False
+    85      False
+    86      False
+    87      False
+            ...
+    1350    False
+    1351    False
+    1352    False
+    1353    False
+    1354    False
+    Name: NOME_SETOR, Length: 1250, dtype: bool
+
+
+
+Use `==` para verificar a igualdade. Não `=`, pois é para atribuição de um valor a uma variável.
+
+
+```python
+#In:
+'Criança' == 'Criança'
+```
+
+
+
+
+    True
+
+
+
+
+```python
+#In:
+'Criança' == 'Adulto'
+```
+
+
+
+
+    False
+
+
+
+Podemos *transmitir* a verificação de igualdade para cada elemento de uma Série. A comparação acontece elemento a elemento.
+
+
+```python
+#In:
+afonso_pena.get('NOME_SETOR') == 'Criança'
+```
+
+
+
+
+    ID_FEIRA_AFONSO_PENA_BARRACA
+    83       True
+    84      False
+    85      False
+    86      False
+    87      False
+            ...
+    1350    False
+    1351    False
+    1352    False
+    1353    False
+    1354    False
+    Name: NOME_SETOR, Length: 1250, dtype: bool
+
+
+
+### À parte: Booleanos
+
+- Quando comparamos dois valores, o resultado é `True` ou `False`.
+- Observe que essas palavras não estão entre aspas.
+- `bool` é um tipo de dados em Python, assim como `int`, `float` e `str`.
+- Significa "Boolean", em homenagem a George Boole, um dos primeiros matemáticos.
+- Existem apenas dois valores booleanos possíveis: `True` ou `False`.
+- Sim ou não.
+- Ligado ou desligado.
+- 1 ou 0.
+
+### Operadores de comparação
+
+Existem vários tipos de comparações que podemos fazer.
+
+|símbolo|significado|
+|--------|--------|
+|`==` |igual a |
+|`!=` |diferente de |
+|`<`|menos que|
+|`<=`|menor ou igual a|
+|`>`|maior que|
+|`>=`|maior ou igual a|
+
+Podemos então usar o operador apropriado para ver tudo que é diferente de 'Criança'
+Observe que a resposta é o oposto de antes!
+
+
+```python
+#In:
+afonso_pena.get('NOME_SETOR') != 'Criança'
+```
+
+
+
+
+    ID_FEIRA_AFONSO_PENA_BARRACA
+    83      False
+    84       True
+    85       True
+    86       True
+    87       True
+            ...
+    1350     True
+    1351     True
+    1352     True
+    1353     True
+    1354     True
+    Name: NOME_SETOR, Length: 1250, dtype: bool
+
+
+
+### O que é uma consulta? 🤔
+
+- Uma "consulta" é um código que extrai linhas de um DataFrame para as quais determinadas condições são verdadeiras.
+- Freqüentemente usamos consultas para _filtrar_ DataFrames para que contenham apenas as linhas que satisfaçam as condições declaradas em nossas perguntas.
+
+### Como consultamos um DataFrame?
+
+Para selecionar apenas determinadas linhas de `solicitações`:
+
+1. Faça uma sequência (lista/matriz/série) de `True`s (manter) e `False`s (lançar), geralmente fazendo uma comparação.
+2. Em seguida, passe-o para `dados[booleanos]`.
+
+
+```python
+#In:
+afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>CODIGO_VAGA</th>
+      <th>NOME_FANTASIA</th>
+      <th>NOME_FEIRANTE</th>
+      <th>NOME_PREPOSTO</th>
+      <th>NOME_SETOR</th>
+      <th>PRODUTOS</th>
+      <th>NUMERO_PRODUTOS_CADASTRADOS</th>
+      <th>AREA</th>
+      <th>DENSIDADE</th>
+    </tr>
+    <tr>
+      <th>ID_FEIRA_AFONSO_PENA_BARRACA</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>83</th>
+      <td>F.F2.V016</td>
+      <td>BARRACA CARMEN EMMANUEL DOS SANTOS SILVA</td>
+      <td>CARMEN EMMANUEL DOS SANTOS SILVA</td>
+      <td>JANA FONSECA VIEIRA</td>
+      <td>Criança</td>
+      <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
+      <td>1.385617</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>F.F3.V022</td>
+      <td>BARRACA CLÁUDIA REGINA RACHID NETTO</td>
+      <td>CLÁUDIA REGINA RACHID NETTO</td>
+      <td>HERMOGENES GONÇALVES NETTO</td>
+      <td>Criança</td>
+      <td>SACOLA, MOISÉS, FRASQUEIRA, MALA, NECESSÁIRE</td>
+      <td>5.0</td>
+      <td>3.60850</td>
+      <td>1.385617</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>F.F2.V002</td>
+      <td>BARRACA CLESIA LUCI TORRES DE OLIVEIRA</td>
+      <td>CLESIA LUCI TORRES DE OLIVEIRA</td>
+      <td>ANA CAROLINE SILVA MATOZINHOS</td>
+      <td>Criança</td>
+      <td>BONECO, MÓBILE, BICHO DE PANO</td>
+      <td>3.0</td>
+      <td>3.60850</td>
+      <td>0.831370</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>F.F1.V031</td>
+      <td>BARRACA DAISY ANDRADE</td>
+      <td>DAISY ANDRADE</td>
+      <td>MARCIO MARTINS</td>
+      <td>Criança</td>
+      <td>PAGÃO, CABIDE</td>
+      <td>2.0</td>
+      <td>3.60505</td>
+      <td>0.554777</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>F.F2.V013</td>
+      <td>BARRACA DIRLENE VILELA ROMÃO</td>
+      <td>DIRLENE VILELA ROMÃO</td>
+      <td>MICHELLE VILELA COSTA</td>
+      <td>Criança</td>
+      <td>EDREDON, MANTA, CAPA DE CARRINHO, CORTINADO DE...</td>
+      <td>7.0</td>
+      <td>3.60505</td>
+      <td>1.941721</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1411</th>
+      <td>F.F3.V013</td>
+      <td>BARRACA ROSANA DANIEL DE FIGUEIREDO</td>
+      <td>ROSANA DANIEL DE FIGUEIREDO</td>
+      <td>MARIA DO ROSARIO SILVA SALGADO</td>
+      <td>Criança</td>
+      <td>KIT BERÇO, MANTA, PROTETOR DE BERÇO, CAPA DE C...</td>
+      <td>10.0</td>
+      <td>3.60505</td>
+      <td>2.773887</td>
+    </tr>
+    <tr>
+      <th>1467</th>
+      <td>F.F1.V005</td>
+      <td>BARRACA LYDNEIA MELISSA TEIXEIRA</td>
+      <td>LYDNEIA MELISSA TEIXEIRA</td>
+      <td>LYDSSEI MELISSA TEIXEIRA FERREIRA</td>
+      <td>Criança</td>
+      <td>KIT BERÇO, SAIA PARA BERÇO, NINHO, LENÇOL, ALM...</td>
+      <td>8.0</td>
+      <td>3.60505</td>
+      <td>2.219109</td>
+    </tr>
+    <tr>
+      <th>1468</th>
+      <td>F.F4.V014</td>
+      <td>BARRACA PAULA GUERRA IGLESIAS RODRIGUES</td>
+      <td>PAULA GUERRA IGLESIAS RODRIGUES</td>
+      <td>GREG PETERSON LOPES PERUZZO</td>
+      <td>Criança</td>
+      <td>BONECA DE PANO, BONECA DE FELTRO, BONECO, DEDO...</td>
+      <td>5.0</td>
+      <td>3.60850</td>
+      <td>1.385617</td>
+    </tr>
+    <tr>
+      <th>1426</th>
+      <td>F.F3.V010</td>
+      <td>BARRACA ALESSANDRA DE ABREU REIS</td>
+      <td>ALESSANDRA DE ABREU REIS</td>
+      <td>GLAUCIA HELENA DE ABREU TAVARES</td>
+      <td>Criança</td>
+      <td>ACESSÓRIOS PARA CACHORRO, ALMOFADA, CAMA DE TE...</td>
+      <td>14.0</td>
+      <td>3.60850</td>
+      <td>3.879728</td>
+    </tr>
+    <tr>
+      <th>1337</th>
+      <td>F.F2.V004</td>
+      <td>BARRACA MATHEUS PESSALI TIAGO BARBOSA</td>
+      <td>MATHEUS PESSALI TIAGO BARBOSA</td>
+      <td>MIRNA COSTA GONÇALVES</td>
+      <td>Criança</td>
+      <td>QUADRO, TOALHA FRALDA, TOALHA, BRINQUEDO PEDAG...</td>
+      <td>6.0</td>
+      <td>3.60850</td>
+      <td>1.662741</td>
+    </tr>
+  </tbody>
+</table>
+<p>103 rows × 9 columns</p>
+</div>
+
+
+
+### Voltando para a pergunta: A densidade média das barracas de produtos de crianças 👶🧸?
+- Filtre um novo DataFrame apenas de crianças
+- Pegue a coluna desejada
+- Tire a média
+
+
+```python
+#In:
+criancas = afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
+criancas.get('DENSIDADE')
+```
+
+
+
+
+    ID_FEIRA_AFONSO_PENA_BARRACA
+    83      1.385617
+    97      1.385617
+    99      0.831370
+    108     0.554777
+    114     1.941721
+              ...
+    1411    2.773887
+    1467    2.219109
+    1468    1.385617
+    1426    3.879728
+    1337    1.662741
+    Name: DENSIDADE, Length: 103, dtype: float64
+
+
+
+
+```python
+#In:
+criancas.get('DENSIDADE').mean()
+```
+
+
+
+
+    2.0035839107964097
+
+
+
+### E se forem comidas? 🍓 🍒 🍎 🍉 🍑 🍊 🥭 🍍 🍌 🍋 🍈 🍏 🍐 🥝 🍇 🥥 🍅 🌶 🍄 🥕 🍠 🧅 🌽 🥦 🥒🥬 🥑 🍆 🧄 🥔 🌰🥜
+
+
+```python
+#In:
+comidas = afonso_pena[afonso_pena.get('NOME_SETOR') == 'Alimentação']
+comidas.get('DENSIDADE').mean()
+```
+
+
+
+
+    0.7158872400619639
+
+
+
+### Como explicar o resultado acima?
+- Será que a coluna área ajuda?
+
+
+```python
+#In:
+comidas.get('AREA').mean()
+```
+
+
+
+
+    10.239278000063992
+
+
+
+
+```python
+#In:
+criancas.get('AREA').mean()
+```
+
+
+
+
+    3.77300194179157
+
+
+
+Parece que as barracas de comida tem muita espaço. Isso é esperado, elas precisam cozinhar.
 
 ## Resumo
 
@@ -1504,3 +2299,9 @@ ordenado
 
 - Responderemos a perguntas mais complicadas, que nos levarão a um novo método principal do DataFrame, `.groupby`, para organizar linhas de um DataFrame com o mesmo valor em uma coluna específica.
 - Por exemplo, podemos querer organizar os dados por bairro, recolhendo todos os diferentes pedidos de serviço para cada bairro.
+
+
+```python
+#In:
+
+```
