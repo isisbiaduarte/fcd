@@ -50,7 +50,7 @@ Alguns links importantes daqui para frente:
 
 ```python
 #In: 
-import pandas as bpd
+import babypandas as bpd
 import numpy as np
 ```
 
@@ -59,9 +59,7 @@ import numpy as np
 - Normalmente trabalharemos com dados armazenados no formato CSV. CSV significa “valores separados por vírgula”.
 - O arquivo [afonso_pena.csv](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/) contém informações sobre as barracas da feira. Tais dados foram coletados da Prefeitura de Belo Horizonte [Dados Abertos PBH](https://dados.pbh.gov.br/dataset/dicionario-de-dados-feira-afonso-pena-barraca).
 
-<center>
-<img height=75% src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/afonsopena.webp"/ width=500>
-</center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/afonsopena.webp)
 
 ### Lendo dados de um arquivo 📖
 
