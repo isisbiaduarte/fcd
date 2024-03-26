@@ -28,15 +28,11 @@ Alguns links importantes daqui para frente:
 - DataFrames (tabelas) são fornecidos por um pacote chamado `pandas`.
 - `pandas` é **a** ferramenta para fazer ciência de dados em Python.
 
-<center>
-<img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/pandas.png' width=500>
-</center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/pandas.png)
 
 ### Mas a biblioteca `pandas` padrão não é tão fofa...
 
-<center>
-<img height=100% src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/angrypanda.jpg"/>
-</center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/angrypanda.jpg)
 
 ### Digite `babypandas`!
 
@@ -44,9 +40,7 @@ Alguns links importantes daqui para frente:
 - Mantém as coisas importantes e tem mensagens de erro muito melhores.
 - É mais fácil de aprender, mas ainda é um código `pandas` válido.
 
-<center>
-<img height=75% src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/babypanda.jpg"/ width=500>
-</center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/babypanda.jpg)
 
 ### DataFrames em `babypandas` 🐼
 
@@ -55,8 +49,8 @@ Alguns links importantes daqui para frente:
 
 
 ```python
-#In:
-import babypandas as bpd
+#In: 
+import pandas as bpd
 import numpy as np
 ```
 
@@ -75,7 +69,7 @@ Podemos ler em um CSV usando `bpd.read_csv(...)`. Forneça o caminho para um arq
 
 
 ```python
-#In:
+#In: 
 afonso_pena = bpd.read_csv('afonso_pena.csv')
 ```
 
@@ -92,9 +86,12 @@ afonso_pena = bpd.read_csv('afonso_pena.csv')
 
 
 ```python
-#In:
+#In: 
 afonso_pena
 ```
+
+
+
 
 <div>
 <style scoped>
@@ -274,7 +271,7 @@ afonso_pena
 
 
 ```python
-#In:
+#In: 
 afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
 ```
 
@@ -451,7 +448,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
 
 
 ```python
-#In:
+#In: 
 afonso_pena
 ```
 
@@ -629,7 +626,7 @@ afonso_pena
 
 
 ```python
-#In:
+#In: 
 afonso_pena = afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
 afonso_pena
 ```
@@ -814,7 +811,7 @@ afonso_pena
 
 
 ```python
-#In:
+#In: 
 # There were 9 columns before, but one of them became the index, and the index is not a column!
 afonso_pena.shape
 ```
@@ -828,7 +825,7 @@ afonso_pena.shape
 
 
 ```python
-#In:
+#In: 
 # Number of rows
 afonso_pena.shape[0]
 ```
@@ -842,7 +839,7 @@ afonso_pena.shape[0]
 
 
 ```python
-#In:
+#In: 
 # Number of columns
 afonso_pena.shape[1]
 ```
@@ -873,7 +870,7 @@ afonso_pena.shape[1]
 
 
 ```python
-#In:
+#In: 
 afonso_pena
 ```
 
@@ -1050,7 +1047,7 @@ afonso_pena
 
 
 ```python
-#In:
+#In: 
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 ```
 
@@ -1063,7 +1060,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
     85      3.0
     86      3.0
     87      7.0
-           ...
+           ... 
     1350    7.0
     1351    3.0
     1352    5.0
@@ -1080,7 +1077,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 
 
 ```python
-#In:
+#In: 
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 ```
 
@@ -1093,7 +1090,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
     85      3.0
     86      3.0
     87      7.0
-           ...
+           ... 
     1350    7.0
     1351    3.0
     1352    5.0
@@ -1109,7 +1106,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 
 
 ```python
-#In:
+#In: 
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').sum()
 ```
 
@@ -1122,7 +1119,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').sum()
 
 
 ```python
-#In:
+#In: 
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').max()
 ```
 
@@ -1135,7 +1132,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').max()
 
 
 ```python
-#In:
+#In: 
 afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').mean()
 ```
 
@@ -1158,7 +1155,7 @@ afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS').mean()
 
 
 ```python
-#In:
+#In: 
 afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
 ```
 
@@ -1344,7 +1341,7 @@ Isso classifica, mas em ordem crescente (de pequeno para grande). Queremos o con
 
 
 ```python
-#In:
+#In: 
 ordenado = afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS', ascending=False)
 ordenado
 ```
@@ -1531,7 +1528,7 @@ ordenado
 
 
 ```python
-#In:
+#In: 
 produtos = afonso_pena.get('NUMERO_PRODUTOS_CADASTRADOS')
 area = afonso_pena.get('AREA')
 ```
@@ -1540,7 +1537,7 @@ area = afonso_pena.get('AREA')
 
 
 ```python
-#In:
+#In: 
 produtos / area
 ```
 
@@ -1553,7 +1550,7 @@ produtos / area
     85      0.831370
     86      0.832166
     87      1.941721
-              ...
+              ...   
     1350    1.939864
     1351    0.832166
     1352    1.386943
@@ -1575,13 +1572,13 @@ produtos / area
 
 
 ```python
-#In:
+#In: 
 
 ```
 
 
 ```python
-#In:
+#In: 
 afonso_pena.assign(DENSIDADE = produtos / area)
 ```
 
@@ -1774,7 +1771,7 @@ afonso_pena.assign(DENSIDADE = produtos / area)
 
 
 ```python
-#In:
+#In: 
 afonso_pena.columns
 ```
 
@@ -1791,7 +1788,7 @@ afonso_pena.columns
 
 
 ```python
-#In:
+#In: 
 afonso_pena = afonso_pena.assign(DENSIDADE = produtos / area)
 afonso_pena.get('DENSIDADE')
 ```
@@ -1805,7 +1802,7 @@ afonso_pena.get('DENSIDADE')
     85      0.831370
     86      0.832166
     87      1.941721
-              ...
+              ...   
     1350    1.939864
     1351    0.832166
     1352    1.386943
@@ -1822,7 +1819,7 @@ afonso_pena.get('DENSIDADE')
 
 
 ```python
-#In:
+#In: 
 # Suas respostas aqui!
 ```
 
@@ -1833,7 +1830,7 @@ afonso_pena.get('DENSIDADE')
 
 
 ```python
-#In:
+#In: 
 # Aqui temos os setores
 afonso_pena.get('NOME_SETOR')
 ```
@@ -1847,7 +1844,7 @@ afonso_pena.get('NOME_SETOR')
     85      Vestuário Infantil
     86      Vestuário Infantil
     87               Vestuário
-                   ...
+                   ...        
     1350           Bijouterias
     1351              Calçados
     1352             Vestuário
@@ -1859,7 +1856,7 @@ afonso_pena.get('NOME_SETOR')
 
 
 ```python
-#In:
+#In: 
 # Quais deles são de crianças
 afonso_pena.get('NOME_SETOR') == 'Criança'
 ```
@@ -1873,7 +1870,7 @@ afonso_pena.get('NOME_SETOR') == 'Criança'
     85      False
     86      False
     87      False
-            ...
+            ...  
     1350    False
     1351    False
     1352    False
@@ -1887,7 +1884,7 @@ Use `==` para verificar a igualdade. Não `=`, pois é para atribuição de um v
 
 
 ```python
-#In:
+#In: 
 'Criança' == 'Criança'
 ```
 
@@ -1900,7 +1897,7 @@ Use `==` para verificar a igualdade. Não `=`, pois é para atribuição de um v
 
 
 ```python
-#In:
+#In: 
 'Criança' == 'Adulto'
 ```
 
@@ -1915,7 +1912,7 @@ Podemos *transmitir* a verificação de igualdade para cada elemento de uma Sér
 
 
 ```python
-#In:
+#In: 
 afonso_pena.get('NOME_SETOR') == 'Criança'
 ```
 
@@ -1928,7 +1925,7 @@ afonso_pena.get('NOME_SETOR') == 'Criança'
     85      False
     86      False
     87      False
-            ...
+            ...  
     1350    False
     1351    False
     1352    False
@@ -1967,7 +1964,7 @@ Observe que a resposta é o oposto de antes!
 
 
 ```python
-#In:
+#In: 
 afonso_pena.get('NOME_SETOR') != 'Criança'
 ```
 
@@ -1980,7 +1977,7 @@ afonso_pena.get('NOME_SETOR') != 'Criança'
     85       True
     86       True
     87       True
-            ...
+            ...  
     1350     True
     1351     True
     1352     True
@@ -2004,7 +2001,7 @@ Para selecionar apenas determinadas linhas de `solicitações`:
 
 
 ```python
-#In:
+#In: 
 afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
 ```
 
@@ -2199,7 +2196,7 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
 
 
 ```python
-#In:
+#In: 
 criancas = afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
 criancas.get('DENSIDADE')
 ```
@@ -2213,7 +2210,7 @@ criancas.get('DENSIDADE')
     99      0.831370
     108     0.554777
     114     1.941721
-              ...
+              ...   
     1411    2.773887
     1467    2.219109
     1468    1.385617
@@ -2225,7 +2222,7 @@ criancas.get('DENSIDADE')
 
 
 ```python
-#In:
+#In: 
 criancas.get('DENSIDADE').mean()
 ```
 
@@ -2240,7 +2237,7 @@ criancas.get('DENSIDADE').mean()
 
 
 ```python
-#In:
+#In: 
 comidas = afonso_pena[afonso_pena.get('NOME_SETOR') == 'Alimentação']
 comidas.get('DENSIDADE').mean()
 ```
@@ -2257,7 +2254,7 @@ comidas.get('DENSIDADE').mean()
 
 
 ```python
-#In:
+#In: 
 comidas.get('AREA').mean()
 ```
 
@@ -2270,7 +2267,7 @@ comidas.get('AREA').mean()
 
 
 ```python
-#In:
+#In: 
 criancas.get('AREA').mean()
 ```
 
@@ -2296,3 +2293,9 @@ Parece que as barracas de comida tem muita espaço. Isso é esperado, elas preci
 
 - Responderemos a perguntas mais complicadas, que nos levarão a um novo método principal do DataFrame, `.groupby`, para organizar linhas de um DataFrame com o mesmo valor em uma coluna específica.
 - Por exemplo, podemos querer organizar os dados por bairro, recolhendo todos os diferentes pedidos de serviço para cada bairro.
+
+
+```python
+#In: 
+
+```
