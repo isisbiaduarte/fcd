@@ -28,13 +28,13 @@ Alguns links importantes daqui para frente:
 - DataFrames (tabelas) são fornecidos por um pacote chamado `pandas`.
 - `pandas` é **a** ferramenta para fazer ciência de dados em Python.
 
-<centro>
+<center>
 <img src='https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/pandas.png' width=500>
 </center>
 
 ### Mas a biblioteca `pandas` padrão não é tão fofa...
 
-<centro>
+<center>
 <img height=100% src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/angrypanda.jpg"/>
 </center>
 
@@ -44,7 +44,7 @@ Alguns links importantes daqui para frente:
 - Mantém as coisas importantes e tem mensagens de erro muito melhores.
 - É mais fácil de aprender, mas ainda é um código `pandas` válido.
 
-<centro>
+<center>
 <img height=75% src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/babypanda.jpg"/ width=500>
 </center>
 
@@ -65,7 +65,7 @@ import numpy as np
 - Normalmente trabalharemos com dados armazenados no formato CSV. CSV significa “valores separados por vírgula”.
 - O arquivo [afonso_pena.csv](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/) contém informações sobre as barracas da feira. Tais dados foram coletados da Prefeitura de Belo Horizonte [Dados Abertos PBH](https://dados.pbh.gov.br/dataset/dicionario-de-dados-feira-afonso-pena-barraca).
 
-<centro>
+<center>
 <img height=75% src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/05-BabyPandas/images/afonsopena.webp"/ width=500>
 </center>
 
@@ -95,9 +95,6 @@ afonso_pena = bpd.read_csv('afonso_pena.csv')
 #In:
 afonso_pena
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -2299,9 +2296,3 @@ Parece que as barracas de comida tem muita espaço. Isso é esperado, elas preci
 
 - Responderemos a perguntas mais complicadas, que nos levarão a um novo método principal do DataFrame, `.groupby`, para organizar linhas de um DataFrame com o mesmo valor em uma coluna específica.
 - Por exemplo, podemos querer organizar os dados por bairro, recolhendo todos os diferentes pedidos de serviço para cada bairro.
-
-
-```python
-#In:
-
-```
