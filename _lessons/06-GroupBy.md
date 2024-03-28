@@ -3,7 +3,7 @@ layout: page
 title: GroupBy
 nav_order: 6
 ---
-[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/04-Arrays.ipynb)
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/06-GroupBy.ipynb)
 
 # Tópico 6 – Mais consultas e GroupBy
 

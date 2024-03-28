@@ -3,7 +3,7 @@ layout: page
 title: BabyPandas
 nav_order: 5
 ---
-[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/04-Arrays.ipynb)
+[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/05-BabyPandas.ipynb)
 
 # Tópico 5 – DataFrames: Acessando DataFrames e Séries
 
