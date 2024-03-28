@@ -7,6 +7,8 @@ nav_order: 5
 
 # Tópico 5 – DataFrames: Acessando DataFrames e Séries
 
+## Os dados de hoje estão [aqui](https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/afonso_pena.csv)
+
 ### Agenda
 
 Hoje, usaremos um conjunto de dados real e muitas perguntas motivadoras para ilustrar as principais técnicas de manipulação de DataFrame.
@@ -68,6 +70,8 @@ Podemos ler em um CSV usando `bpd.read_csv(...)`. Forneça o caminho para um arq
 
 ```python
 #In: 
+# para rodar no colab use 'https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/afonso_pena.csv'
+# i.e., afonso_pena = bpd.read_csv('https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/afonso_pena.csv')
 afonso_pena = bpd.read_csv('afonso_pena.csv')
 ```
 

@@ -7,6 +7,8 @@ nav_order: 6
 
 # Tópico 6 – Mais consultas e GroupBy
 
+Os dados de hoje estão [aqui (Afonso Pena)](https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/afonso_pena.csv) e [aqui (IMDB)](https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/imdb.csv)
+
 
 ```python
 #In: 
@@ -68,6 +70,8 @@ O DataFrame `df` contém dados dos feirantes da Afonso Pena
 
 ```python
 #In: 
+# para rodar no colab use 'https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/afonso_pena.csv'
+# i.e., df = bpd.read_csv('https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/afonso_pena.csv')
 df = bpd.read_csv('afonso_pena.csv')
 
 produtos = df.get('NUMERO_PRODUTOS_CADASTRADOS')
@@ -2749,11 +2753,14 @@ num_barracas
 
 ## Mais prática: conjunto de dados IMDb 🎞️
 
+- Os dados estão [aqui](https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/imdb.csv)
+
 ![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/06-GroupBy/images/imdb.png)
 
 
 ```python
 #In: 
+# No colab, use este caminho 'https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/imdb.csv'
 imdb = bpd.read_csv('imdb.csv').set_index('Title').sort_values(by='Rating')
 imdb
 ```
