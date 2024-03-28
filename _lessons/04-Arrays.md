@@ -30,7 +30,7 @@ Resultados Esperados
 - Strings
 - Listas.
 - Matrizes.
-- Gamas.
+- Intervalos.
 
 ## Strings ou Texto
 

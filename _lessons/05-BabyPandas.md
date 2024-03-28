@@ -1,11 +1,11 @@
 ---
 layout: page
 title: BabyPandas
-nav_order: 4
+nav_order: 5
 ---
 [<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/04-Arrays.ipynb)
 
-# Aula 4 – DataFrames: Acessando DataFrames e Séries
+# Tópico 5 – DataFrames: Acessando DataFrames e Séries
 
 ### Agenda
 
@@ -1567,12 +1567,6 @@ produtos / area
 * Use `.assign(name_of_column=data_in_series)` para atribuir uma série (ou array, ou lista) a um DataFrame.
 * ⚠️ Não coloque aspas em `name_of_column`.
 * Cria um novo DataFrame!
-
-
-```python
-#In: 
-
-```
 
 
 ```python
