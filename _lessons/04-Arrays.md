@@ -1099,7 +1099,7 @@ days_in_september = np.array([
 
 Precisa haver uma maneira mais fácil de fazer isso!
 
-### Gamas
+### Intervalos
 * Um **intervalo** é uma matriz de números espaçados uniformemente. Criamos intervalos usando `np.arange`.
 * A maneira mais geral de criar um intervalo é `np.arange(start, end, step)`. Isso retorna uma matriz tal que:
 - O primeiro número é `start`. **Por padrão, `iniciar` é 0.**
