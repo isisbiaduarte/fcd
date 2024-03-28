@@ -131,7 +131,7 @@ afonso_pena
       <td>Criança</td>
       <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1</th>
@@ -143,7 +143,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>2</th>
@@ -155,7 +155,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>VESTIDO, CONJUNTO, MACACÃO</td>
       <td>3.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>3</th>
@@ -167,7 +167,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>MACACÃO, BLUSA, SAPATINHO</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>4</th>
@@ -179,7 +179,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
       <td>7.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>...</th>
@@ -203,7 +203,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1246</th>
@@ -215,7 +215,7 @@ afonso_pena
       <td>Calçados</td>
       <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1247</th>
@@ -227,7 +227,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
       <td>5.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1248</th>
@@ -239,7 +239,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1249</th>
@@ -251,7 +251,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
       <td>4.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
   </tbody>
 </table>
@@ -325,7 +325,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Criança</td>
       <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>84</th>
@@ -336,7 +336,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Bijouterias</td>
       <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>85</th>
@@ -347,7 +347,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Vestuário Infantil</td>
       <td>VESTIDO, CONJUNTO, MACACÃO</td>
       <td>3.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>86</th>
@@ -358,7 +358,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Vestuário Infantil</td>
       <td>MACACÃO, BLUSA, SAPATINHO</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>87</th>
@@ -369,7 +369,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Vestuário</td>
       <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
       <td>7.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>...</th>
@@ -391,7 +391,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Bijouterias</td>
       <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1351</th>
@@ -402,7 +402,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Calçados</td>
       <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1352</th>
@@ -413,7 +413,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Vestuário</td>
       <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
       <td>5.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1353</th>
@@ -424,7 +424,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Bijouterias</td>
       <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1354</th>
@@ -435,7 +435,7 @@ afonso_pena.set_index('ID_FEIRA_AFONSO_PENA_BARRACA')
       <td>Bijouterias</td>
       <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
       <td>4.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
   </tbody>
 </table>
@@ -493,7 +493,7 @@ afonso_pena
       <td>Criança</td>
       <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1</th>
@@ -505,7 +505,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>2</th>
@@ -517,7 +517,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>VESTIDO, CONJUNTO, MACACÃO</td>
       <td>3.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>3</th>
@@ -529,7 +529,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>MACACÃO, BLUSA, SAPATINHO</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>4</th>
@@ -541,7 +541,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
       <td>7.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>...</th>
@@ -565,7 +565,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1246</th>
@@ -577,7 +577,7 @@ afonso_pena
       <td>Calçados</td>
       <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1247</th>
@@ -589,7 +589,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
       <td>5.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1248</th>
@@ -601,7 +601,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1249</th>
@@ -613,7 +613,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
       <td>4.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
   </tbody>
 </table>
@@ -681,7 +681,7 @@ afonso_pena
       <td>Criança</td>
       <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>84</th>
@@ -692,7 +692,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>85</th>
@@ -703,7 +703,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>VESTIDO, CONJUNTO, MACACÃO</td>
       <td>3.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>86</th>
@@ -714,7 +714,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>MACACÃO, BLUSA, SAPATINHO</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>87</th>
@@ -725,7 +725,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
       <td>7.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>...</th>
@@ -747,7 +747,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1351</th>
@@ -758,7 +758,7 @@ afonso_pena
       <td>Calçados</td>
       <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1352</th>
@@ -769,7 +769,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
       <td>5.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1353</th>
@@ -780,7 +780,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1354</th>
@@ -791,7 +791,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
       <td>4.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
   </tbody>
 </table>
@@ -924,7 +924,7 @@ afonso_pena
       <td>Criança</td>
       <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>84</th>
@@ -935,7 +935,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
       <td>5.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>85</th>
@@ -946,7 +946,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>VESTIDO, CONJUNTO, MACACÃO</td>
       <td>3.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>86</th>
@@ -957,7 +957,7 @@ afonso_pena
       <td>Vestuário Infantil</td>
       <td>MACACÃO, BLUSA, SAPATINHO</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>87</th>
@@ -968,7 +968,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
       <td>7.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>...</th>
@@ -990,7 +990,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1351</th>
@@ -1001,7 +1001,7 @@ afonso_pena
       <td>Calçados</td>
       <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
       <td>3.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1352</th>
@@ -1012,7 +1012,7 @@ afonso_pena
       <td>Vestuário</td>
       <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
       <td>5.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1353</th>
@@ -1023,7 +1023,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1354</th>
@@ -1034,7 +1034,7 @@ afonso_pena
       <td>Bijouterias</td>
       <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
       <td>4.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
   </tbody>
 </table>
@@ -1209,7 +1209,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Alimentação</td>
       <td>ACARAJÉ</td>
       <td>1.0</td>
-      <td>10.24465</td>
+      <td>33.611058</td>
     </tr>
     <tr>
       <th>1019</th>
@@ -1220,7 +1220,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Artes e Pintura</td>
       <td>PINTURA ACRÍLICA</td>
       <td>1.0</td>
-      <td>7.25125</td>
+      <td>23.790191</td>
     </tr>
     <tr>
       <th>122</th>
@@ -1231,7 +1231,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Vestuário Infantil</td>
       <td>VESTIDO</td>
       <td>1.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1331</th>
@@ -1242,7 +1242,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Vestuário Infantil</td>
       <td>VESTIDO</td>
       <td>1.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>387</th>
@@ -1253,7 +1253,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Cintos, Bolsas e Acessórios</td>
       <td>BOLSA</td>
       <td>1.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1275,7 +1275,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Criança</td>
       <td>VESTIDO, BLUSA, CONJUNTO VIROL, CALÇA, COLETE,...</td>
       <td>20.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1406</th>
@@ -1286,7 +1286,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Alimentação</td>
       <td>CERVEJA, REFRIGERANTE, SUCO INDUSTRIALIZADO, E...</td>
       <td>20.0</td>
-      <td>10.24465</td>
+      <td>33.611058</td>
     </tr>
     <tr>
       <th>336</th>
@@ -1297,7 +1297,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Decoração e Utilidades</td>
       <td>CERÂMICA VITRIFICADA, MOLDURA, VELA, CASTIÇAL,...</td>
       <td>20.0</td>
-      <td>6.45970</td>
+      <td>21.193242</td>
     </tr>
     <tr>
       <th>491</th>
@@ -1308,7 +1308,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Criança</td>
       <td>KIT BERÇO, CORTINADO, BONECA DE PELÚCIA, SAIA ...</td>
       <td>21.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>109</th>
@@ -1319,7 +1319,7 @@ afonso_pena.sort_values(by='NUMERO_PRODUTOS_CADASTRADOS')
       <td>Alimentação</td>
       <td>CERVEJA, TORRESMO, CHIPS, AZEITONA, REFRIGERAN...</td>
       <td>21.0</td>
-      <td>10.24465</td>
+      <td>33.611057</td>
     </tr>
   </tbody>
 </table>
@@ -1396,7 +1396,7 @@ ordenado
       <td>Alimentação</td>
       <td>CERVEJA, TORRESMO, CHIPS, AZEITONA, REFRIGERAN...</td>
       <td>21.0</td>
-      <td>10.24465</td>
+      <td>33.611057</td>
     </tr>
     <tr>
       <th>491</th>
@@ -1407,7 +1407,7 @@ ordenado
       <td>Criança</td>
       <td>KIT BERÇO, CORTINADO, BONECA DE PELÚCIA, SAIA ...</td>
       <td>21.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>653</th>
@@ -1418,7 +1418,7 @@ ordenado
       <td>Criança</td>
       <td>VESTIDO, BLUSA, CONJUNTO VIROL, CALÇA, COLETE,...</td>
       <td>20.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
     <tr>
       <th>1406</th>
@@ -1429,7 +1429,7 @@ ordenado
       <td>Alimentação</td>
       <td>CERVEJA, REFRIGERANTE, SUCO INDUSTRIALIZADO, E...</td>
       <td>20.0</td>
-      <td>10.24465</td>
+      <td>33.611058</td>
     </tr>
     <tr>
       <th>336</th>
@@ -1440,7 +1440,7 @@ ordenado
       <td>Decoração e Utilidades</td>
       <td>CERÂMICA VITRIFICADA, MOLDURA, VELA, CASTIÇAL,...</td>
       <td>20.0</td>
-      <td>6.45970</td>
+      <td>21.193242</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1462,7 +1462,7 @@ ordenado
       <td>Artes e Pintura</td>
       <td>PINTURA A ÓLEO</td>
       <td>1.0</td>
-      <td>7.25125</td>
+      <td>23.790191</td>
     </tr>
     <tr>
       <th>401</th>
@@ -1473,7 +1473,7 @@ ordenado
       <td>Cintos, Bolsas e Acessórios</td>
       <td>BOLSA</td>
       <td>1.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>811</th>
@@ -1484,7 +1484,7 @@ ordenado
       <td>Vestuário</td>
       <td>BLUSA</td>
       <td>1.0</td>
-      <td>3.60850</td>
+      <td>11.838911</td>
     </tr>
     <tr>
       <th>1022</th>
@@ -1495,7 +1495,7 @@ ordenado
       <td>Artes e Pintura</td>
       <td>PINTURA A ÓLEO</td>
       <td>1.0</td>
-      <td>7.25125</td>
+      <td>23.790191</td>
     </tr>
     <tr>
       <th>1170</th>
@@ -1506,7 +1506,7 @@ ordenado
       <td>Cintos, Bolsas e Acessórios</td>
       <td>BOLSA</td>
       <td>1.0</td>
-      <td>3.60505</td>
+      <td>11.827592</td>
     </tr>
   </tbody>
 </table>
@@ -1543,17 +1543,17 @@ produtos / area
 
 
     ID_FEIRA_AFONSO_PENA_BARRACA
-    83      1.385617
-    84      1.385617
-    85      0.831370
-    86      0.832166
-    87      1.941721
+    83      0.422336
+    84      0.422336
+    85      0.253402
+    86      0.253644
+    87      0.591836
               ...   
-    1350    1.939864
-    1351    0.832166
-    1352    1.386943
-    1353    1.939864
-    1354    1.109555
+    1350    0.591271
+    1351    0.253644
+    1352    0.422740
+    1353    0.591271
+    1354    0.338192
     Length: 1250, dtype: float64
 
 
@@ -1634,8 +1634,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Criança</td>
       <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
       <td>5.0</td>
-      <td>3.60850</td>
-      <td>1.385617</td>
+      <td>11.838911</td>
+      <td>0.422336</td>
     </tr>
     <tr>
       <th>84</th>
@@ -1646,8 +1646,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Bijouterias</td>
       <td>BRINCO, ANEL, PULSEIRA, COLAR, ARCO</td>
       <td>5.0</td>
-      <td>3.60850</td>
-      <td>1.385617</td>
+      <td>11.838911</td>
+      <td>0.422336</td>
     </tr>
     <tr>
       <th>85</th>
@@ -1658,8 +1658,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Vestuário Infantil</td>
       <td>VESTIDO, CONJUNTO, MACACÃO</td>
       <td>3.0</td>
-      <td>3.60850</td>
-      <td>0.831370</td>
+      <td>11.838911</td>
+      <td>0.253402</td>
     </tr>
     <tr>
       <th>86</th>
@@ -1670,8 +1670,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Vestuário Infantil</td>
       <td>MACACÃO, BLUSA, SAPATINHO</td>
       <td>3.0</td>
-      <td>3.60505</td>
-      <td>0.832166</td>
+      <td>11.827592</td>
+      <td>0.253644</td>
     </tr>
     <tr>
       <th>87</th>
@@ -1682,8 +1682,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Vestuário</td>
       <td>BLUSA, BERMUDA, ROUPA DE GINÁSTICA, SAIA, VEST...</td>
       <td>7.0</td>
-      <td>3.60505</td>
-      <td>1.941721</td>
+      <td>11.827592</td>
+      <td>0.591836</td>
     </tr>
     <tr>
       <th>...</th>
@@ -1706,8 +1706,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Bijouterias</td>
       <td>ANEL, COLAR, BROCHE, BRINCO, PULSEIRA, ALIANÇA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
-      <td>1.939864</td>
+      <td>11.838911</td>
+      <td>0.591271</td>
     </tr>
     <tr>
       <th>1351</th>
@@ -1718,8 +1718,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Calçados</td>
       <td>RASTEIRINHA, SAPATO, SANDÁLIA</td>
       <td>3.0</td>
-      <td>3.60505</td>
-      <td>0.832166</td>
+      <td>11.827592</td>
+      <td>0.253644</td>
     </tr>
     <tr>
       <th>1352</th>
@@ -1730,8 +1730,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Vestuário</td>
       <td>VESTIDO DE MALHA, BATA DE TECIDO, CONJUNTO, SA...</td>
       <td>5.0</td>
-      <td>3.60505</td>
-      <td>1.386943</td>
+      <td>11.827592</td>
+      <td>0.422740</td>
     </tr>
     <tr>
       <th>1353</th>
@@ -1742,8 +1742,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Bijouterias</td>
       <td>COLAR, GARGANTILHA, ARCO, ANEL, PASSADOR DE CA...</td>
       <td>7.0</td>
-      <td>3.60850</td>
-      <td>1.939864</td>
+      <td>11.838911</td>
+      <td>0.591271</td>
     </tr>
     <tr>
       <th>1354</th>
@@ -1754,8 +1754,8 @@ afonso_pena.assign(DENSIDADE = produtos / area)
       <td>Bijouterias</td>
       <td>COLAR DE METAL, PRESILHA, PASSADOR DE CABELO, ...</td>
       <td>4.0</td>
-      <td>3.60505</td>
-      <td>1.109555</td>
+      <td>11.827592</td>
+      <td>0.338192</td>
     </tr>
   </tbody>
 </table>
@@ -1795,17 +1795,17 @@ afonso_pena.get('DENSIDADE')
 
 
     ID_FEIRA_AFONSO_PENA_BARRACA
-    83      1.385617
-    84      1.385617
-    85      0.831370
-    86      0.832166
-    87      1.941721
+    83      0.422336
+    84      0.422336
+    85      0.253402
+    86      0.253644
+    87      0.591836
               ...   
-    1350    1.939864
-    1351    0.832166
-    1352    1.386943
-    1353    1.939864
-    1354    1.109555
+    1350    0.591271
+    1351    0.253644
+    1352    0.422740
+    1353    0.591271
+    1354    0.338192
     Name: DENSIDADE, Length: 1250, dtype: float64
 
 
@@ -2057,8 +2057,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>BOLSA DE BEBÊ, MALA DE MATERNIDADE, NECESSÁIRE...</td>
       <td>5.0</td>
-      <td>3.60850</td>
-      <td>1.385617</td>
+      <td>11.838911</td>
+      <td>0.422336</td>
     </tr>
     <tr>
       <th>97</th>
@@ -2069,8 +2069,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>SACOLA, MOISÉS, FRASQUEIRA, MALA, NECESSÁIRE</td>
       <td>5.0</td>
-      <td>3.60850</td>
-      <td>1.385617</td>
+      <td>11.838911</td>
+      <td>0.422336</td>
     </tr>
     <tr>
       <th>99</th>
@@ -2081,8 +2081,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>BONECO, MÓBILE, BICHO DE PANO</td>
       <td>3.0</td>
-      <td>3.60850</td>
-      <td>0.831370</td>
+      <td>11.838911</td>
+      <td>0.253402</td>
     </tr>
     <tr>
       <th>108</th>
@@ -2093,8 +2093,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>PAGÃO, CABIDE</td>
       <td>2.0</td>
-      <td>3.60505</td>
-      <td>0.554777</td>
+      <td>11.827592</td>
+      <td>0.169096</td>
     </tr>
     <tr>
       <th>114</th>
@@ -2105,8 +2105,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>EDREDON, MANTA, CAPA DE CARRINHO, CORTINADO DE...</td>
       <td>7.0</td>
-      <td>3.60505</td>
-      <td>1.941721</td>
+      <td>11.827592</td>
+      <td>0.591836</td>
     </tr>
     <tr>
       <th>...</th>
@@ -2129,8 +2129,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>KIT BERÇO, MANTA, PROTETOR DE BERÇO, CAPA DE C...</td>
       <td>10.0</td>
-      <td>3.60505</td>
-      <td>2.773887</td>
+      <td>11.827592</td>
+      <td>0.845481</td>
     </tr>
     <tr>
       <th>1467</th>
@@ -2141,8 +2141,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>KIT BERÇO, SAIA PARA BERÇO, NINHO, LENÇOL, ALM...</td>
       <td>8.0</td>
-      <td>3.60505</td>
-      <td>2.219109</td>
+      <td>11.827592</td>
+      <td>0.676384</td>
     </tr>
     <tr>
       <th>1468</th>
@@ -2153,8 +2153,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>BONECA DE PANO, BONECA DE FELTRO, BONECO, DEDO...</td>
       <td>5.0</td>
-      <td>3.60850</td>
-      <td>1.385617</td>
+      <td>11.838911</td>
+      <td>0.422336</td>
     </tr>
     <tr>
       <th>1426</th>
@@ -2165,8 +2165,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>ACESSÓRIOS PARA CACHORRO, ALMOFADA, CAMA DE TE...</td>
       <td>14.0</td>
-      <td>3.60850</td>
-      <td>3.879728</td>
+      <td>11.838911</td>
+      <td>1.182541</td>
     </tr>
     <tr>
       <th>1337</th>
@@ -2177,8 +2177,8 @@ afonso_pena[afonso_pena.get('NOME_SETOR') == 'Criança']
       <td>Criança</td>
       <td>QUADRO, TOALHA FRALDA, TOALHA, BRINQUEDO PEDAG...</td>
       <td>6.0</td>
-      <td>3.60850</td>
-      <td>1.662741</td>
+      <td>11.838911</td>
+      <td>0.506803</td>
     </tr>
   </tbody>
 </table>
@@ -2203,17 +2203,17 @@ criancas.get('DENSIDADE')
 
 
     ID_FEIRA_AFONSO_PENA_BARRACA
-    83      1.385617
-    97      1.385617
-    99      0.831370
-    108     0.554777
-    114     1.941721
+    83      0.422336
+    97      0.422336
+    99      0.253402
+    108     0.169096
+    114     0.591836
               ...   
-    1411    2.773887
-    1467    2.219109
-    1468    1.385617
-    1426    3.879728
-    1337    1.662741
+    1411    0.845481
+    1467    0.676384
+    1468    0.422336
+    1426    1.182541
+    1337    0.506803
     Name: DENSIDADE, Length: 103, dtype: float64
 
 
@@ -2227,7 +2227,7 @@ criancas.get('DENSIDADE').mean()
 
 
 
-    2.0035839107964097
+    0.6106923564685903
 
 
 
@@ -2243,7 +2243,7 @@ comidas.get('DENSIDADE').mean()
 
 
 
-    0.7158872400619639
+    0.218202423788409
 
 
 
@@ -2259,7 +2259,7 @@ comidas.get('AREA').mean()
 
 
 
-    10.239278000063992
+    33.593432833729956
 
 
 
@@ -2272,7 +2272,7 @@ criancas.get('AREA').mean()
 
 
 
-    3.77300194179157
+    12.378615690707454
 
 
 
