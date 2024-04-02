@@ -2,6 +2,7 @@
 layout: page
 title: Projeto
 description: Sobre o Projeto.
+nav_order: 2
 ---
 
 # Projeto
