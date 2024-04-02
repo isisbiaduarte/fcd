@@ -37,7 +37,7 @@ Após a execução do bloco de código acima, qual é o valor de
 
 **Resposta:** 33.0
 
-</summary>
+</details>
 
 ## Problema 2
 
@@ -60,7 +60,7 @@ Qual é o valor da expressão bass * tuna?
 
 **Resposta**: "55"
 
-</summary>
+</details>
 
 ## Problema 2.2
 
@@ -78,7 +78,7 @@ Qual das seguintes expressões resulta em um erro?
 
 **Resposta**: `int(sword[0])`
 
-</summary>
+</details>
 
 ## Problema 2.3
 
@@ -95,7 +95,7 @@ Qual das seguintes expressões é avaliada como "DSC10"?
 
 **Resposta**: `gold[3].replace("o", "s").upper() + str(gold[0] + int(gold[1]))`
 
-</summary>
+</details>
 
 ## Problema 3
 
@@ -122,7 +122,7 @@ penguin = np.arange(____)
 argumentos: 5, qualquer número no intervalo (21,25] e 4.
 Por exemplo, `penguin = np.arange(5, 25, 4)` funcionaria.
 
-</summary>
+</details>
 
 ## Problema 3.2
 
@@ -144,7 +144,7 @@ parrot = __(x)__ * np.arange(0, __(y)__, 2) + __(z)__
 - `y`: qualquer número em $(8, 10]$
 - `z`: `5`
 
-</summary>
+</details>
 
 ## Problema 4
 
@@ -174,7 +174,7 @@ algum erro, selecione “Erro”.
 
 **Resposta**: Series
 
-</summary>
+</details>
 
 ### Problema 4.2
 
@@ -193,7 +193,7 @@ Se esta expressão apresentar algum erro, selecione “Erro”.
 
 **Resposta**: Erro
 
-</summary>
+</details>
 
 ### Problema 4.3
 
@@ -217,7 +217,7 @@ animal_two = students.get(__(x)__).iloc[__(z)__]
 - `y`: `"A12345678"`
 - `z`: `5`
 
-</summary>
+</details>
 
 ### Problema 4.4
 
@@ -236,4 +236,4 @@ alteradas?
 
 **Resposta**: Apenas `z`
 
-</summary>
+</details>
