@@ -31,8 +31,11 @@ Após a execução do bloco de código acima, qual é o valor de
 `vaca`?
 
 #### Solução
+
 <details><summary>Resposta</summary>
-Resposta: 33.0
+  
+**Resposta:** 33.0
+
 </summary>
 
 ## Problema 2
@@ -51,8 +54,11 @@ gold = [4, "6", "CSE", "doc"]
 Qual é o valor da expressão bass * tuna?
 
 ##### Solução
+
 <details><summary>Resposta</summary>
+  
 **Resposta**: "55"
+
 </summary>
 
 ## Problema 2.2
@@ -68,7 +74,9 @@ Qual das seguintes expressões resulta em um erro?
 ##### Solução
 
 <details><summary>Resposta</summary>
+  
 **Resposta**: `int(sword[0])`
+
 </summary>
 
 ## Problema 2.3
@@ -83,7 +91,9 @@ Qual das seguintes expressões é avaliada como "DSC10"?
 ##### Solução
 
 <details><summary>Resposta</summary>
+  
 **Resposta**: `gold[3].replace("o", "s").upper() + str(gold[0] + int(gold[1]))`
+
 </summary>
 
 ## Problema 3
@@ -160,7 +170,9 @@ algum erro, selecione “Erro”.
 ##### Solução.
 
 <details><summary>Resposta</summary>
+  
 **Resposta**: Series
+
 </summary>
 
 ### Problema 4.2
@@ -177,7 +189,9 @@ Se esta expressão apresentar algum erro, selecione “Erro”.
 ##### Solução
 
 <details><summary>Resposta</summary>
+  
 **Resposta**: Erro
+
 </summary>
 
 ### Problema 4.3
@@ -195,11 +209,13 @@ animal_two = students.get(__(x)__).iloc[__(z)__]
 ##### Solução.
 
 <details><summary>Resposta</summary>
+  
 **Resposta**:
 
 - `x`: `"Animal"`
 - `y`: `"A12345678"`
 - `z`: `5`
+
 </summary>
 
 ### Problema 4.4
@@ -216,5 +232,7 @@ alteradas?
 ##### Solução
 
 <details><summary>Resposta</summary>
+
 **Resposta**: Apenas `z`
+
 </summary>
