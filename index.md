@@ -16,6 +16,8 @@ seo:
 
 {: .no_toc .mb-2 }
 
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/babypanda.webp)
+
 ## Ementa
 
 Fundamentos da Ciência de Dados combina três perspectivas:

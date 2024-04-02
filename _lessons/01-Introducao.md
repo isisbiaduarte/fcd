@@ -139,6 +139,8 @@ Do artigo de [The Pudding](https://pudding.cool/) em [The Pudding](https://puddi
 
 ### De onde vem a "ciência de dados"?
 
+[Slides](https://docs.google.com/presentation/d/1-Uz9QE3B0fbN3zHRl3DAuyf0WeKvNCmAhHpKGZDS8Lg)
+
 
 ```python
 #In: 
