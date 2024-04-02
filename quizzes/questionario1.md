@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Questionário 1
+parent: Quizzes
 nav_order: 1
 ---
 
@@ -33,7 +34,7 @@ Após a execução do bloco de código acima, qual é o valor de
 #### Solução
 
 <details><summary>Resposta</summary>
-  
+
 **Resposta:** 33.0
 
 </summary>
@@ -56,7 +57,7 @@ Qual é o valor da expressão bass * tuna?
 ##### Solução
 
 <details><summary>Resposta</summary>
-  
+
 **Resposta**: "55"
 
 </summary>
@@ -74,7 +75,7 @@ Qual das seguintes expressões resulta em um erro?
 ##### Solução
 
 <details><summary>Resposta</summary>
-  
+
 **Resposta**: `int(sword[0])`
 
 </summary>
@@ -91,7 +92,7 @@ Qual das seguintes expressões é avaliada como "DSC10"?
 ##### Solução
 
 <details><summary>Resposta</summary>
-  
+
 **Resposta**: `gold[3].replace("o", "s").upper() + str(gold[0] + int(gold[1]))`
 
 </summary>
@@ -170,7 +171,7 @@ algum erro, selecione “Erro”.
 ##### Solução.
 
 <details><summary>Resposta</summary>
-  
+
 **Resposta**: Series
 
 </summary>
@@ -189,7 +190,7 @@ Se esta expressão apresentar algum erro, selecione “Erro”.
 ##### Solução
 
 <details><summary>Resposta</summary>
-  
+
 **Resposta**: Erro
 
 </summary>
@@ -209,7 +210,7 @@ animal_two = students.get(__(x)__).iloc[__(z)__]
 ##### Solução.
 
 <details><summary>Resposta</summary>
-  
+
 **Resposta**:
 
 - `x`: `"Animal"`
