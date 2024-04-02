@@ -2,6 +2,7 @@
 layout: page
 title: Python do Zero ao Um
 description: Uma Pequena Introdução à Linguagem Python
+nav_order: 5
 ---
 
 # Pequena Introdução de Python
