@@ -14,7 +14,6 @@ Quizzes para estudo em casa
 {: .fs-6 .fw-300 }
 
 ---
-**Lista de Quizzes**
 1. TOC
 {:toc}
 ---
