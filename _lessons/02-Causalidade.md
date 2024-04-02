@@ -17,7 +17,7 @@ Resultados Esperados
 * Entender a diferença entre estudos randomizados e observacionais
 
 {: .no_toc .text-delta }
-Material Adaptador do [Data 8 (Berkeley)](https://data8.org/)
+Material Adaptado do [Data 8 (Berkeley)](https://data8.org/)
 
 ---
 **Sumário**

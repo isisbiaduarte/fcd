@@ -19,7 +19,7 @@ Resultados Esperados
 1. Conhecimento básico de manipulação de arrays
 
 {: .no_toc .text-delta }
-Material Adaptador do [DSC10 (UCSD)](https://dsc10.com/)
+Material Adaptado do [DSC10 (UCSD)](https://dsc10.com/)
 
 ### Recursos 🤝
 

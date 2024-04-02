@@ -18,7 +18,7 @@ Resultados Esperados
 1. Ter um pouco de noção do potêncial de pandas
 
 {: .no_toc .text-delta }
-Material Adaptador do [DSC10 (UCSD)](https://dsc10.com/)
+Material Adaptado do [DSC10 (UCSD)](https://dsc10.com/)
 
 Os dados de hoje estão [aqui (Afonso Pena)](https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/afonso_pena.csv) e [aqui (IMDB)](https://raw.githubusercontent.com/flaviovdf/fcd/main/assets/06-GroupBy/data/imdb.csv)
 
