@@ -7,12 +7,6 @@ nav_order: 1
 
 # Questionário 1
 
----
-**Sumário**
-1. TOC
-{:toc}
----
-
 ## Problema 1
 
 Após uma visita ao zoológico, Anthony escreveu o seguinte
@@ -34,9 +28,7 @@ Após a execução do bloco de código acima, qual é o valor de
 #### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta:** 33.0
-
+33.0
 </details>
 
 ## Problema 2
@@ -57,9 +49,7 @@ Qual é o valor da expressão bass * tuna?
 ##### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta**: "55"
-
+"55"
 </details>
 
 ## Problema 2.2
@@ -75,9 +65,7 @@ Qual das seguintes expressões resulta em um erro?
 ##### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta**: `int(sword[0])`
-
+`int(sword[0])`
 </details>
 
 ## Problema 2.3
@@ -92,9 +80,7 @@ Qual das seguintes expressões é avaliada como "DSC10"?
 ##### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta**: `gold[3].replace("o", "s").upper() + str(gold[0] + int(gold[1]))`
-
+`gold[3].replace("o", "s").upper() + str(gold[0] + int(gold[1]))`
 </details>
 
 ## Problema 3
@@ -117,11 +103,9 @@ penguin = np.arange(____)
 ##### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta**: Precisamos fornecer `np.arange` três
+Precisamos fornecer `np.arange` três
 argumentos: 5, qualquer número no intervalo (21,25] e 4.
 Por exemplo, `penguin = np.arange(5, 25, 4)` funcionaria.
-
 </details>
 
 ## Problema 3.2
@@ -137,13 +121,9 @@ parrot = __(x)__ * np.arange(0, __(y)__, 2) + __(z)__
 ##### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta**:
-
 - `x`: `2`
 - `y`: qualquer número em $(8, 10]$
 - `z`: `5`
-
 </details>
 
 ## Problema 4
@@ -171,9 +151,7 @@ algum erro, selecione “Erro”.
 ##### Solução.
 
 <details><summary>Resposta</summary>
-
-**Resposta**: Series
-
+Series
 </details>
 
 ### Problema 4.2
@@ -190,9 +168,7 @@ Se esta expressão apresentar algum erro, selecione “Erro”.
 ##### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta**: Erro
-
+Erro
 </details>
 
 ### Problema 4.3
@@ -210,13 +186,9 @@ animal_two = students.get(__(x)__).iloc[__(z)__]
 ##### Solução.
 
 <details><summary>Resposta</summary>
-
-**Resposta**:
-
 - `x`: `"Animal"`
 - `y`: `"A12345678"`
 - `z`: `5`
-
 </details>
 
 ### Problema 4.4
@@ -233,7 +205,5 @@ alteradas?
 ##### Solução
 
 <details><summary>Resposta</summary>
-
-**Resposta**: Apenas `z`
-
+Apenas `z`
 </details>
