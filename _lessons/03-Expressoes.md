@@ -3,10 +3,9 @@ layout: page
 title: Expressões
 nav_order: 3
 ---
-[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/03-Expressoes.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/03-Expressoes.ipynb)
 
 # Tópico 3 - Expressões
-
 {: .no_toc .mb-2 }
 
 Primeiros passos em Python.
@@ -18,6 +17,9 @@ Resultados Esperados
 1. Saber o que é um notebook e um arquivo `.py`
 1. Saber realizar matemática simples em python
 1. Entender as ferramentas base da ciência de dados
+
+{: .no_toc .text-delta }
+Material Adaptador do [DSC10 (UCSD)](https://dsc10.com/)
 
 
 ```python
@@ -537,7 +539,7 @@ Ou use a função `help`, por ex. `ajuda(máx.)`.
 max?
 ```
 
-### Exemplo: `redondo`
+### Exemplo: `round`
 
 
 ```python
@@ -692,7 +694,7 @@ A. `abs(x, y)`
 
 B. `math.pow(x, abs(y))`
 
-C. `redondo (x, max (abs (y ** 2)))`
+C. `round(x, max (abs (y ** 2)))`
 
 D. `math.pow(x, math.pow(y, x))`
 

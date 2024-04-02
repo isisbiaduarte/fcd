@@ -32,6 +32,7 @@ fi
 
 if [[ -d $support_files ]]; then
   cp -r $support_files/* $fname_noext/$support_files/
+  rm -rf $support_files/
 fi
 
 output=$folder/${fname_noext}.md
@@ -39,4 +40,3 @@ tail -n +1 $output > $folder/${fname_noext}.md.tmp
 mv $folder/${fname_noext}.md.tmp $folder/${fname_noext}.md
 
 sed -i 's/```python/```python\n#In: /g' $folder/${fname_noext}.md
-cp ./colab_favicon_small.png $fname_noext/

@@ -3,10 +3,9 @@ layout: page
 title: Strings e Arrays
 nav_order: 4
 ---
-[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/04-Arrays.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/04-Arrays.ipynb)
 
 # Tópico 4 - Strings e Arrays
-
 {: .no_toc .mb-2 }
 
 Vetores (Arrays) representam um conjunto básico de dados. Vamos aprender como usar os mesmos.
@@ -18,6 +17,9 @@ Resultados Esperados
 1. Entender tipos em Python, em particular a String
 1. Saber o que é a biblioteca [numpy](https://numpy.org/)
 1. Conhecimento básico de manipulação de arrays
+
+{: .no_toc .text-delta }
+Material Adaptador do [DSC10 (UCSD)](https://dsc10.com/)
 
 ### Recursos 🤝
 

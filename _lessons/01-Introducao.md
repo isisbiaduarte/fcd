@@ -3,10 +3,9 @@ layout: page
 title: Introdução
 nav_order: 1
 ---
-[<img src="./colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/01-Introducao.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/01-Introducao.ipynb)
 
 # Aula 1 - Introdução
-
 {: .no_toc .mb-2 }
 
 Apresentando o curso.
@@ -18,6 +17,9 @@ Resultados Esperados
 1. Entender um pouco de onde veio a ciência de dados
 1. Receber as tarefas de configuração do ambiente
 1. Ficar motivado!
+
+{: .no_toc .text-delta }
+Material Adaptador do [DSC10 (UCSD)](https://dsc10.com/)
 
 ## Imports Básicos
 
