@@ -2,6 +2,7 @@
 layout: page
 title: Calendário
 description: Calendário do Semestre.
+nav_order: 1
 ---
 
 # Calendário
