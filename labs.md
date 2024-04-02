@@ -16,6 +16,12 @@ no curso. A submissão dos mesmos será via Moodle.
 {: .no_toc .text-delta }
 Material Adaptado do Data8 (Berkeley) e Data10 (UCSD).
 
-## Laboratório 00
+## Laboratório 00: Expressões e tipos de dados
 
-## Laboratório 01
+- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab00/sol.ipynb)
+- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/lab00/sol.ipynb)
+
+## Laboratório 01: Arrays e DataFrames
+
+- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab01/sol.ipynb)
+- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/lab01/sol.ipynb)
