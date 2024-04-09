@@ -51,11 +51,11 @@ O tipo de visualização que criamos depende dos tipos de variáveis ​​que e
 
 ### Algumas visualizações ruins
 
-<center><img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/08-MaisViz/images/bananas.png" width=60%></center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/08-MaisViz/images/bananas.png)
 
-<center><img src="images/average_height.png" width=50%></center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/08-MaisViz/images/average_height.png)
 
-<center><img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/08-MaisViz/images/weather.png" width=80%></center>
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/08-MaisViz/images/weather.png)
 
 ## Distribuições
 
@@ -1093,7 +1093,7 @@ Tente responder a estas perguntas com base no histograma sobreposto.
 2. Qual proporção de mães tinha entre 60 e 63 polegadas de altura?
 
 <h3>Respostas</h3>
-<detalhes>
+<details>
 <summary>Clique aqui para mostrar.</summary>
 
 <b>Pergunta 1</b>
@@ -1108,7 +1108,7 @@ Para verificar nossa resposta, podemos executar
 
 Não podemos dizer. Poderíamos tentar dividir na proporção de mães em $[60, 62.5)$ e $[60, 62.5)$, mas não sabemos o último. Na ausência de qualquer informação adicional, não podemos inferir sobre a distribuição de valores dentro de um compartimento. Por exemplo, pode ser que todos no intervalo $[60, 62.5)$ realmente caiam no intervalo $[60, 62.5)$ - ou pode ser que ninguém caia!
 
-</detalhes>
+</details>
 
 ## Resumo, da próxima vez
 
