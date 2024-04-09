@@ -3,7 +3,7 @@ layout: page
 title: Visualização de Dados
 nav_order: 7
 ---
-[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/07-Viz.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/06-Viz.ipynb)
 
 # Tópico 7 – DataViz: Visualizando Dados 📈
 {: .no_toc .mb-2 }
@@ -1964,10 +1964,12 @@ Experimente você mesmo!
 - Algumas visualizações tornam mais difícil ver a tendência nos dados, ao:
 
 - Adicionando "[chart junk](https://eagereyes.org/criticism/chart-junk-considered-useful-after-all)."
-<center><img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/07-DataViz/images/usefuljunk-monster.jpg" width=40%></center>
+
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/07-DataViz/images/usefuljunk-monster.jpg)
 
 - Usando eixos e tamanhos enganosos.
-<center><img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/07-DataViz/images/average_height.png" width=30%></center>
+
+![](https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/07-DataViz/images/average_height.png)
 
 ## Resumo
 
