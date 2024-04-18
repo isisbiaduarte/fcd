@@ -5,7 +5,7 @@ description: Provas para Estudo
 nav_order: 6
 ---
 
-# Laboratórios
+# Provas para Estudo
 
 {: .no_toc .mb-2 }
 
