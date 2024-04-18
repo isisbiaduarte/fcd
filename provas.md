@@ -32,13 +32,21 @@ abaixo.
 ## Exemplos de Prova 01
 
 -[Exemplo 01](https://practice.dsc10.com/wi24-midterm/index.html)
+
 -[Exemplo 02](https://practice.dsc10.com/fa23-midterm/index.html)
+
 -[Exemplo 03](https://practice.dsc10.com/sp23-midterm/index.html)
+
 -[Exemplo 04](https://practice.dsc10.com/wi23-midterm/index.html)
+
 -[Exemplo 05](https://practice.dsc10.com/fa22-midterm/index.html)
+
 -[Exemplo 06](https://practice.dsc10.com/sp22-midterm/index.html)
+
 -[Exemplo 07](https://practice.dsc10.com/wi22-midterm/index.html)
+
 -[Exemplo 08](https://practice.dsc10.com/wi21-midterm/index.html)
+
 -[Exemplo 09](https://practice.dsc10.com/fa21-midterm/index.html)
 
 ## Exemplos de Prova 02
