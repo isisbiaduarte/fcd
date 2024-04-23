@@ -3,7 +3,7 @@ layout: page
 title: Iteração
 nav_order: 10
 ---
-[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/09-Funcoes.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/10-Iteracao.ipynb)
 
 # Tópico 10 – Iteração
 {: .no_toc .mb-2 }
@@ -20,7 +20,7 @@ Resultados Esperados
 {: .no_toc .text-delta }
 Material Adaptado do [DSC10 (UCSD)](https://dsc10.com/)
 
-<alert>Eu não tive tempo de mudar esses exemplos, então eles refletem a realidade da UCSD. Não da UFMG.</alert>
+<alert><font color='red'>Eu não tive tempo de mudar esses exemplos, então eles refletem a realidade da UCSD. Não da UFMG.</font></alert>
 
 
 ```python
@@ -960,7 +960,7 @@ flip(10)
 
 
 
-    2
+    6
 
 
 
@@ -995,7 +995,7 @@ heads_array
 
 
 
-    array([3., 6., 6., ..., 4., 8., 5.])
+    array([5., 4., 5., ..., 7., 5., 4.])
 
 
 
@@ -1128,8 +1128,3 @@ vowel_count('i go to uc san diego')
 - As instruções `if` nos permitem executar pedaços de código dependendo se certas condições são `True`.
 - `for`-loops são usados ​​para repetir a execução do código para cada elemento de uma sequência.
 - Listas, arrays e strings são exemplos de sequências.
-
-### Próxima vez
-
-- Probabilidade.
-- Uma aula de matemática – sem código!

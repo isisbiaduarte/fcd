@@ -3,7 +3,7 @@ layout: page
 title: Merge
 nav_order: 11
 ---
-[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/09-Funcoes.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/11-Mesclando.ipynb)
 
 # Tópico 11 – Merge ou Mesclando
 {: .no_toc .mb-2 }

@@ -3,7 +3,7 @@ layout: page
 title: Probabilidade
 nav_order: 12
 ---
-[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/09-Funcoes.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/12-Probabilidade.ipynb)
 
 # Tópico 12 – Probabilidade
 {: .no_toc .mb-2 }
@@ -86,7 +86,7 @@ Tenho três cartas: vermelha, azul e verde. Qual é a chance de eu escolher uma 
 - Se todos os resultados forem igualmente prováveis, então a probabilidade condicional de $B$ dado $A$ é:
 
 $$
-P(B \text{ dado } A) = P(B | A) =
+P(B \text{ dado } A) = P(B | A) = 
 = \frac{
 \text{\# de resultados que satisfazem $A$ e $B$}
 }{
@@ -245,6 +245,6 @@ $$
 
 
 ```python
-#In:
+#In: 
 
 ```
