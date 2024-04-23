@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Merge
+title: Simulação
 nav_order: 13
 ---
-[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/11-Mesclando.ipynb)
+[<img src="https://raw.githubusercontent.com/flaviovdf/fcd/master/assets/colab_favicon_small.png" style="float: right;">](https://colab.research.google.com/github/flaviovdf/fcd/blob/master/_lessons/13-Simulacao.ipynb)
 
 # Tópico 13 – Simulação
 {: .no_toc .mb-2 }
@@ -23,7 +23,7 @@ Material Adaptado do [DSC10 (UCSD)](https://dsc10.com/)
 
 
 ```python
-#In: 
+#In:
 import matplotlib.pyplot as plt
 import numpy as np
 import babypandas as bpd
@@ -55,7 +55,7 @@ plt.style.use('ggplot')
 
 
 ```python
-#In: 
+#In:
 # Simulate a fair coin flip
 np.random.choice(['Heads', 'Tails'])
 ```
@@ -69,7 +69,7 @@ np.random.choice(['Heads', 'Tails'])
 
 
 ```python
-#In: 
+#In:
 # Simulate a roll of a die
 np.random.choice(np.arange(1, 7))
 ```
@@ -87,7 +87,7 @@ np.random.choice(np.arange(1, 7))
 
 
 ```python
-#In: 
+#In:
 # Simulate 10 fair coin flips
 np.random.choice(['Heads', 'Tails'], 10)
 ```
@@ -110,9 +110,9 @@ np.random.choice(['Heads', 'Tails'], 10)
 
 
 ```python
-#In: 
+#In:
 # Choose three colleges to win free HDH swag
-colleges = ['Revelle', 'John Muir', 'Thurgood Marshall', 
+colleges = ['Revelle', 'John Muir', 'Thurgood Marshall',
             'Earl Warren', 'Eleanor Roosevelt', 'Sixth', 'Seventh']
 
 np.random.choice(colleges, 3, replace=False)
@@ -146,7 +146,7 @@ Qual é a probabilidade de obtermos 60 ou mais caras se lançarmos 100 moedas?
 
 
 ```python
-#In: 
+#In:
 coins = np.random.choice(['Heads', 'Tails'], 100)
 coins
 ```
@@ -174,7 +174,7 @@ coins
 
 
 ```python
-#In: 
+#In:
 (coins == 'Heads').sum()
 ```
 
@@ -187,7 +187,7 @@ coins
 
 
 ```python
-#In: 
+#In:
 np.count_nonzero(coins == 'Heads') # counts the number of Trues in sequence
 ```
 
@@ -207,7 +207,7 @@ np.count_nonzero(coins == 'Heads') # counts the number of Trues in sequence
 
 
 ```python
-#In: 
+#In:
 def coin_experiment():
     coins = np.random.choice(['Heads', 'Tails'], 100)
     return np.count_nonzero(coins == 'Heads')
@@ -215,7 +215,7 @@ def coin_experiment():
 
 
 ```python
-#In: 
+#In:
 coin_experiment()
 ```
 
@@ -234,7 +234,7 @@ coin_experiment()
 
 
 ```python
-#In: 
+#In:
 head_counts = np.array([])
 head_counts
 ```
@@ -248,7 +248,7 @@ head_counts
 
 
 ```python
-#In: 
+#In:
 head_counts = np.append(head_counts, 15)
 head_counts
 ```
@@ -262,7 +262,7 @@ head_counts
 
 
 ```python
-#In: 
+#In:
 head_counts = np.append(head_counts, 25)
 head_counts
 ```
@@ -278,7 +278,7 @@ head_counts
 
 
 ```python
-#In: 
+#In:
 # Specify the number of repetitions
 repetitions = 10000
 
@@ -293,7 +293,7 @@ for i in np.arange(repetitions):
 
 
 ```python
-#In: 
+#In:
 len(head_counts)
 ```
 
@@ -306,7 +306,7 @@ len(head_counts)
 
 
 ```python
-#In: 
+#In:
 head_counts
 ```
 
@@ -321,7 +321,7 @@ head_counts
 
 
 ```python
-#In: 
+#In:
 # In how many experiments was the number of heads >= 60?
 at_least_60 = np.count_nonzero(head_counts >= 60)
 at_least_60
@@ -336,7 +336,7 @@ at_least_60
 
 
 ```python
-#In: 
+#In:
 # What is this as a proportion?
 at_least_60 / repetitions
 ```
@@ -350,7 +350,7 @@ at_least_60 / repetitions
 
 
 ```python
-#In: 
+#In:
 # Can also use np.mean()! Why?
 np.mean(head_counts >= 60)
 ```
@@ -366,7 +366,7 @@ Isso está bem próximo da verdadeira resposta teórica!
 
 
 ```python
-#In: 
+#In:
 # The theoretical answer – don't worry about how or why this code works
 import math
 sum([math.comb(100, i) * (1 / 2) ** 100 for i in np.arange(60, 101)])
@@ -383,7 +383,7 @@ sum([math.comb(100, i) * (1 / 2) ** 100 for i in np.arange(60, 101)])
 
 
 ```python
-#In: 
+#In:
 bpd.DataFrame().assign(
     Number_of_Heads=head_counts
 ).plot(kind='hist', bins=np.arange(30, 70), density=True, ec='w', figsize=(10, 5));
@@ -391,9 +391,9 @@ plt.axvline(60, color='C1');
 ```
 
 
-    
+
 ![png](13-Simulacao_files/13-Simulacao_39_0.png)
-    
+
 
 
 - Este histograma descreve a distribuição do número de cabeças em cada experimento.
@@ -451,7 +451,7 @@ Quando você escolhe uma porta, há três resultados igualmente prováveis:
 
 
 ```python
-#In: 
+#In:
 behind_picked_door = np.random.choice(['Car', 'Goat #1', 'Goat #2'])
 behind_picked_door
 ```
@@ -469,7 +469,7 @@ Quando Monty abre uma porta diferente, ele sempre revela uma cabra.
 
 
 ```python
-#In: 
+#In:
 if behind_picked_door == 'Goat #1':
     revealed = 'Goat #2'
 elif behind_picked_door == 'Goat #2':
@@ -493,7 +493,7 @@ Se você sempre trocar, acabará ganhando o prêmio que não está nem `behind_p
 
 
 ```python
-#In: 
+#In:
 for prize in ['Car', 'Goat #1', 'Goat #2']:
     if prize != behind_picked_door and prize != revealed:
         your_prize = prize
@@ -514,28 +514,28 @@ Vamos transformar isso em uma função para facilitar a repetição:
 
 
 ```python
-#In: 
+#In:
 def simulate_switch_strategy():
     behind_picked_door = np.random.choice(['Car', 'Goat #1', 'Goat #2'])
-    
+
     if behind_picked_door == 'Goat #1':
         revealed = 'Goat #2'
     elif behind_picked_door == 'Goat #2':
         revealed = 'Goat #1'
     else:
         revealed = np.random.choice(['Goat #1', 'Goat #2'])
-        
+
     for prize in ['Car', 'Goat #1', 'Goat #2']:
         if prize != behind_picked_door and prize != revealed:
             your_prize = prize
-        
+
     #print(behind_picked_door, 'was behind the door.', revealed, 'was revealed by the host. Your prize was:', your_prize)
     return your_prize
 ```
 
 
 ```python
-#In: 
+#In:
 simulate_switch_strategy()
 ```
 
@@ -552,7 +552,7 @@ Devemos guardar seu prêmio em cada jogo. Para fazer isso, vamos usar `np.append
 
 
 ```python
-#In: 
+#In:
 repetitions = 10000
 
 your_prizes = np.array([])
@@ -564,7 +564,7 @@ for i in np.arange(repetitions):
 
 
 ```python
-#In: 
+#In:
 your_prizes
 ```
 
@@ -580,7 +580,7 @@ your_prizes
 
 
 ```python
-#In: 
+#In:
 your_prizes
 ```
 
@@ -594,7 +594,7 @@ your_prizes
 
 
 ```python
-#In: 
+#In:
 np.count_nonzero(your_prizes == 'Car')
 ```
 
@@ -607,7 +607,7 @@ np.count_nonzero(your_prizes == 'Car')
 
 
 ```python
-#In: 
+#In:
 np.count_nonzero(your_prizes == 'Car') / repetitions
 ```
 
@@ -630,13 +630,13 @@ Isso está bem próximo da verdadeira probabilidade de ganhar se você trocar, $
 
 
 ```python
-#In: 
+#In:
 car_count = 0
 ```
 
 
 ```python
-#In: 
+#In:
 for i in np.arange(repetitions):
     your_prize = simulate_switch_strategy()
     if your_prize == 'Car':
@@ -645,7 +645,7 @@ for i in np.arange(repetitions):
 
 
 ```python
-#In: 
+#In:
 car_count / repetitions
 ```
 
@@ -664,7 +664,7 @@ Não são necessárias matrizes! Esta estratégia nem sempre funciona; depende d
 
 
 ```python
-#In: 
+#In:
 car_count = 0
 
 for i in np.arange(repetitions):
@@ -672,7 +672,7 @@ for i in np.arange(repetitions):
     your_prize = behind_picked_door
     if your_prize == 'Car':
         car_count = car_count + 1
-        
+
 car_count / repetitions
 ```
 
