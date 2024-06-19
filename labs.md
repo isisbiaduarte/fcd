@@ -28,10 +28,20 @@ Material Adaptado do Data8 (Berkeley) e Data10 (UCSD).
 
 ## Laboratório 02: Visualizações de Dados e Funções Python
 
-- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab01/sol.ipynb)
-- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab01/sol.ipynb)
+- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab02/sol.ipynb)
+- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab02/sol.ipynb)
 
 ## Laboratório 03: DataFrames, Fluxo de Controle e Probabilidade
 
-- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab02/sol.ipynb)
-- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab02/sol.ipynb)
+- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab03/sol.ipynb)
+- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab03/sol.ipynb)
+
+## Laboratório 04: DataFrames, Fluxo de Controle e Probabilidade
+
+- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab04/sol.ipynb)
+- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab04/sol.ipynb)
+
+## Laboratório 05: Amostragem e Re-amostragem
+
+- [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab05/sol.ipynb)
+- [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab05/sol.ipynb)
