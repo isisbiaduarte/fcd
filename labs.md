@@ -36,7 +36,7 @@ Material Adaptado do Data8 (Berkeley) e Data10 (UCSD).
 - [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab03/sol.ipynb)
 - [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab03/sol.ipynb)
 
-## Laboratório 04: DataFrames, Fluxo de Controle e Probabilidade
+## Laboratório 04: Simulação
 
 - [Github](https://github.com/flaviovdf/fcd/blob/main/labs/lab04/sol.ipynb)
 - [Colab](https://colab.research.google.com/github/flaviovdf/fcd/blob/main/labs/lab04/sol.ipynb)
