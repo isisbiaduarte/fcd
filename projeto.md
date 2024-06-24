@@ -81,7 +81,7 @@ A linha de código glob.glob('*.csv') retornará todos os arquivos que terminam 
 
 Infelizmente, o BabyPandas não lida muito bem com datas. Por isso, vamos tratar as datas usando pandas. A função pd.to_datetime converte texto em datas, funcionando bem no nosso caso.
 
-```
+```python
 import pandas as pd
 
 data_correta = pd.to_datetime(
@@ -91,7 +91,7 @@ data_correta = pd.to_datetime(
 
 Agora basta colocar a data na coluna correta
 
-```
+```python
 df = df.assign(
     data_boletim = data_correta
 )
@@ -101,7 +101,7 @@ df = df.assign(
 
 Por fim, vamos remover todas as colunas desnecessárias e configurar um índice.
 
-```
+```python
 df = df.drop(
     columns=['data hora_boletim',
              'data_inclusao',
