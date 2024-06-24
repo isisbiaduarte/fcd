@@ -41,12 +41,20 @@ abaixo:
 ```python
 import babypandas as bpd
 import glob
+import pandas as pd
 
 df = bpd.DataFrame()
 for f in glob.glob('*.csv'):
     aux = bpd.read_csv(f, sep=';')
-    df = bpd.concat((aux, df), axis='rows')
-print(df.head())
+    df = df.append(aux)
+
+data_correta = pd.to_datetime(
+    df.get('data hora_boletim').values
+)
+
+df = df.assign(
+    data_boletim = data_correta
+)
 ```
 
 Observe como a mesma faz uso de uma biblioteca chamada de
@@ -90,3 +98,14 @@ arquivos que terminam em `.csv`. Isto é:
  'si-bol-2014.csv',
  'si-bol-2013.csv']
 ```
+
+Problemas.
+1. Explicar a chamada do clean
+2. Mapear colunas para ids corretos
+3. Limpar x e y estranho
+5. Plotar mapa de BH por tipo de acidente
+6. Plotar série temporal de acidentes por ano/mês
+7. Remover 2020 e 2021 da base, pandemia
+8. Plotar IC via bootstrap de número de acidentes por mês
+9. Usar número de acidentes de 2022 para prever 2023
+10. Fazer análises adicionais que tenha interesse
