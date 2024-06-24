@@ -12,8 +12,6 @@ nav_order: 2
 Praticar a matéria fazendo uma análise não trivial
 {: .fs-6 .fw-300 }
 
----
----
 **Sumário**
 1. TOC
 {:toc}
@@ -21,22 +19,11 @@ Praticar a matéria fazendo uma análise não trivial
 
 ## Análise dos Acidentes de Trânsito de Belo Horizonte
 
-Neste projeto vamos usar as técnicas que aprendemos em sala
-de aula em alguns problemas de ciência de dados. Nosso
-projeto tem um tema fixo, pense no mesmo como um
-laboratório mais complexo. O importante do projeto é que
-você siga todo o ciclo de trabalho de um cientista de
-dados. Ou seja, é uma análise além do trivial (computar uma
-média) de uma base que necessita de das duas partes da
-matéria.
+Neste projeto, vamos aplicar as técnicas aprendidas em sala de aula a alguns problemas de ciência de dados. Nosso projeto tem um tema fixo, funcionando como um laboratório mais complexo. O importante é que você siga todo o ciclo de trabalho de um cientista de dados, realizando uma análise além do trivial (como computar uma média) em uma base de dados que requer as duas partes da matéria.
 
 ### Base de Dados
 
-A base de dados que vocês devem analisar consiste de
-acidentes de trânsito na cidade de Belo Horizonte. A base
-é separada em vários arquivos `csv` que podem ser lidos
-diretamente com `babypandas`. Para tal, use a chamada
-abaixo:
+A base de dados a ser analisada consiste em registros de acidentes de trânsito na cidade de Belo Horizonte. A base é separada em vários arquivos csv que podem ser lidos diretamente com babypandas. Para isso, use o código abaixo:
 
 ```python
 import babypandas as bpd
@@ -47,20 +34,11 @@ df = bpd.DataFrame()
 for f in glob.glob('*.csv'):
     aux = bpd.read_csv(f, sep=';')
     df = df.append(aux)
-
-data_correta = pd.to_datetime(
-    df.get('data hora_boletim').values
-)
-
-df = df.assign(
-    data_boletim = data_correta
-)
 ```
 
-Observe como a mesma faz uso de uma biblioteca chamada de
-`glob`. A biblioteca glob serve para ler todos os arquivos
-de uma data pasta. Por exemplo, se sua pasta tem os
-seguintes arquivos:
+#### Lendo vários arquivos
+
+Observe que o código faz uso da biblioteca glob, que serve para ler todos os arquivos de uma determinada pasta. Por exemplo, se sua pasta contiver os seguintes arquivos:
 
 ```
 $ ls
@@ -79,11 +57,9 @@ $ ls
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2024.csv
 -rw-r--r-- 1 flaviovdf flaviovdf    3354 Jun 24 09:06 Projeto.ipynb
 ```
+A linha de código glob.glob('*.csv') retornará todos os arquivos que terminam em .csv, como:
 
-A linha do código `glob.glob('*.csv')` retornar todos os
-arquivos que terminam em `.csv`. Isto é:
-
-```
+```python
 ['si-bol-2016.csv',
  'si-bol-2018.csv',
  'si-bol-2021.csv',
@@ -99,13 +75,58 @@ arquivos que terminam em `.csv`. Isto é:
  'si-bol-2013.csv']
 ```
 
-Problemas.
-1. Explicar a chamada do clean
-2. Mapear colunas para ids corretos
-3. Limpar x e y estranho
-5. Plotar mapa de BH por tipo de acidente
-6. Plotar série temporal de acidentes por ano/mês
-7. Remover 2020 e 2021 da base, pandemia
-8. Plotar IC via bootstrap de número de acidentes por mês
-9. Usar número de acidentes de 2022 para prever 2023
+#### Colando um índice de datas 
+
+Infelizmente, o BabyPandas não lida muito bem com datas. Por isso, vamos tratar as datas usando pandas. A função pd.to_datetime converte texto em datas, funcionando bem no nosso caso.
+
+```
+import pandas as pd
+
+data_correta = pd.to_datetime(
+    df.get('data hora_boletim').values
+)
+```
+
+Agora basta colocar a data na coluna correta
+
+```
+df = df.assign(
+    data_boletim = data_correta
+)
+```
+
+#### Removendo as colunas que não precisamos
+
+Por fim, vamos remover todas as colunas desnecessárias e configurar um índice.
+
+```
+df = df.drop(
+    columns=['data hora_boletim',
+             'data_inclusao',
+             'valor_ups',
+             'valor_ups_antiga',
+             'descricao_ups_antiga']
+).set_index('data_boletim')
+```
+
+## Problemas
+
+Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas abaixo:
+
+1. Mapear Colunas para IDs Corretos:
+    - Identifique as colunas no DataFrame que representam identificadores únicos ou chaves estrangeiras. Renomeie ou mapeie essas colunas para IDs corretos que facilitem a análise e manipulação dos dados.
+1. Limpar Valores Estranhos nas Colunas X e Y:
+    - Inspecione as colunas que representam coordenadas geográficas (x e y). Identifique e corrija valores anômalos ou fora do esperado. Considere valores nulos, duplicados ou que estejam fora do alcance geográfico da cidade de Belo Horizonte.
+1. Plotar Mapa de Belo Horizonte por Tipo de Acidente:
+    - Faça um gráfico de dispersão das coordenadas X e Y dos acidentes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, plote os locais dos acidentes e categorize-os por tipo. Utilize cores ou marcadores distintos para cada tipo de acidente.
+1. Plotar Série Temporal de Acidentes por Ano/Mês:
+    - Crie gráficos de séries temporais que mostrem a quantidade de acidentes ao longo do tempo, agregando os dados por ano e mês. Identifique tendências, picos e padrões sazonais.
+1. Remover Dados de 2020 e 2021 da Base, Devido à Pandemia:
+    - Exclua os dados referentes aos anos de 2020 e 2021, pois os padrões de acidentes nesses anos podem ter sido fortemente influenciados pela pandemia de COVID-19 e podem não refletir a tendência geral.
+1. Plotar Intervalo de Confiança via Bootstrap do Número de Acidentes por Mês:
+    - Utilize a técnica de bootstrap para calcular intervalos de confiança para o número de acidentes em cada mês. Plote esses intervalos juntamente com a média mensal dos acidentes para visualizar a variabilidade e a confiança das estimativas.
+1. Usar o Número de Acidentes de 2022 para Prever 2023:
+    - Aplique métodos de previsão (como modelos de regressão) para estimar o número de acidentes em 2023, utilizando os dados de 2022 como base. Avalie a precisão do modelo e discuta suas limitações.
+1. Fazer Análises Adicionais de Interesse:
+    - Realize análises exploratórias adicionais que sejam de seu interesse ou relevância para o projeto. Isso pode incluir a correlação entre diferentes variáveis, a análise de hotspots de acidentes, ou a investigação de fatores contribuintes para a gravidade dos acidentes.
 10. Fazer análises adicionais que tenha interesse
