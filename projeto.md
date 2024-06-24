@@ -21,6 +21,8 @@ Praticar a matéria fazendo uma análise não trivial
 
 Neste projeto, vamos aplicar as técnicas aprendidas em sala de aula a alguns problemas de ciência de dados. Nosso projeto tem um tema fixo, funcionando como um laboratório mais complexo. O importante é que você siga todo o ciclo de trabalho de um cientista de dados, realizando uma análise além do trivial (como computar uma média) em uma base de dados que requer as duas partes da matéria.
 
+Para baixar a base, [clique aqui](http://flaviovdf.io/fcd/assets/99-Projeto/dados.zip).
+
 ### Base de Dados
 
 A base de dados a ser analisada consiste em registros de acidentes de trânsito na cidade de Belo Horizonte. A base é separada em vários arquivos csv que podem ser lidos diretamente com babypandas. Para isso, use o código abaixo:
@@ -114,9 +116,9 @@ df = df.drop(
 Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas abaixo:
 
 1. Mapear Colunas para IDs Corretos:
-    - Identifique as colunas no DataFrame que representam identificadores únicos ou chaves estrangeiras. Renomeie ou mapeie essas colunas para IDs corretos que facilitem a análise e manipulação dos dados.
+    - Identifique as colunas no DataFrame que representam identificadores únicos ou chaves estrangeiras. Renomeie ou mapeie essas colunas para IDs corretos que facilitem a análise e manipulação dos dados. Para mapear as colunas para nomes interessante, vocês devem fazer uso do dicionário de varáveis disponível [aqui](https://dados.pbh.gov.br/dataset/relacao-de-ocorrencias-de-acidentes-de-transito-com-vitima). Abra o mesmo em excell ou google sheets.
 1. Limpar Valores Estranhos nas Colunas X e Y:
-    - Inspecione as colunas que representam coordenadas geográficas (x e y). Identifique e corrija valores anômalos ou fora do esperado. Considere valores nulos, duplicados ou que estejam fora do alcance geográfico da cidade de Belo Horizonte.
+    - Inspecione as colunas que representam coordenadas geográficas (x e y). Identifique e corrija valores anômalos ou fora do esperado. Considere valores nulos ou que estejam fora do alcance geográfico da cidade de Belo Horizonte. Por exemplo, os valores de eixo x ou y igual a zero tem que sair. Além do mais, existem valores extremos. Faça um gráfico de dispersão, próximo item, indentifique os mesmos e remova-os.
 1. Plotar Mapa de Belo Horizonte por Tipo de Acidente:
     - Faça um gráfico de dispersão das coordenadas X e Y dos acidentes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, plote os locais dos acidentes e categorize-os por tipo. Utilize cores ou marcadores distintos para cada tipo de acidente.
 1. Plotar Série Temporal de Acidentes por Ano/Mês:
