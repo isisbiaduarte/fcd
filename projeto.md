@@ -44,7 +44,6 @@ Observe que o código faz uso da biblioteca glob, que serve para ler todos os ar
 
 ```
 $ ls
--rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2011.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2012.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2013.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2014.csv
@@ -55,8 +54,6 @@ $ ls
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2019.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2021.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2022.csv
--rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2023.csv
--rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2024.csv
 -rw-r--r-- 1 flaviovdf flaviovdf    3354 Jun 24 09:06 Projeto.ipynb
 ```
 A linha de código glob.glob('*.csv') retornará todos os arquivos que terminam em .csv, como:
@@ -65,13 +62,10 @@ A linha de código glob.glob('*.csv') retornará todos os arquivos que terminam 
 ['si-bol-2016.csv',
  'si-bol-2018.csv',
  'si-bol-2021.csv',
- 'si-bol-2023.csv',
- 'si-bol-2011.csv',
  'si-bol-2017.csv',
  'si-bol-2015.csv',
  'si-bol-2019.csv',
  'si-bol-2012.csv',
- 'si-bol-2024.csv',
  'si-bol-2022.csv',
  'si-bol-2014.csv',
  'si-bol-2013.csv']
@@ -107,8 +101,9 @@ df = df.drop(
              'data_inclusao',
              'valor_ups',
              'valor_ups_antiga',
+             'data_alteracao_smsa',
              'descricao_ups_antiga']
-).set_index('data_boletim')
+).sort_values(by='data_boletim').set_index('data_boletim')
 ```
 
 ## Problemas
@@ -116,19 +111,36 @@ df = df.drop(
 Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas abaixo:
 
 1. Mapear Colunas para IDs Corretos:
-    - Identifique as colunas no DataFrame que representam identificadores únicos ou chaves estrangeiras. Renomeie ou mapeie essas colunas para IDs corretos que facilitem a análise e manipulação dos dados. Para mapear as colunas para nomes interessante, vocês devem fazer uso do dicionário de varáveis disponível [aqui](https://dados.pbh.gov.br/dataset/relacao-de-ocorrencias-de-acidentes-de-transito-com-vitima). Abra o mesmo em excell ou google sheets.
+    - Identifique as colunas no DataFrame que representam categorias mas estão codificadas com números ou códigos como `H06002`. Renomeie ou mapeie essas colunas para IDs corretos que facilitem a análise e manipulação dos dados. Para mapear as colunas para nomes interessante, vocês devem fazer uso do dicionário de varáveis disponível [aqui](https://dados.pbh.gov.br/dataset/relacao-de-ocorrencias-de-acidentes-de-transito-com-vitima). Abra o mesmo em excell ou google sheets.
+    - Dica 1: Use um `if` ou se quiser se souber, um dicionário, para mapear cada categoria no texto correto.
+    - Dica 2: Procure no material da disciplina o local que falamos de funções e apply
+
 1. Limpar Valores Estranhos nas Colunas X e Y:
     - Inspecione as colunas que representam coordenadas geográficas (x e y). Identifique e corrija valores anômalos ou fora do esperado. Considere valores nulos ou que estejam fora do alcance geográfico da cidade de Belo Horizonte. Por exemplo, os valores de eixo x ou y igual a zero tem que sair. Além do mais, existem valores extremos. Faça um gráfico de dispersão, próximo item, indentifique os mesmos e remova-os.
+    - Dica 1: Filtre qualquer x ou y menor do que dez milhões (10_000_000). A latitudes e longitudes de BH não é menor do que isso.
+    - Dica 2: Vá para a aula de filtro e queries.
+
+1. Faça um gráfico de barras **por ano** indicandos os tipos de acidentes mais comuns no ano.
+    - Dica: Vá para a aula de visualizações e para a aula de groupby
+
+1. Repita o gráfico acima considerando gráficos fatais e não fatais.
+    
 1. Plotar Mapa de Belo Horizonte por Tipo de Acidente:
     - Faça um gráfico de dispersão das coordenadas X e Y dos acidentes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, plote os locais dos acidentes e categorize-os por tipo. Utilize cores ou marcadores distintos para cada tipo de acidente.
+      
 1. Plotar Série Temporal de Acidentes por Ano/Mês:
     - Crie gráficos de séries temporais que mostrem a quantidade de acidentes ao longo do tempo, agregando os dados por ano e mês. Identifique tendências, picos e padrões sazonais.
+      
 1. Remover Dados de 2020 e 2021 da Base, Devido à Pandemia:
     - Exclua os dados referentes aos anos de 2020 e 2021, pois os padrões de acidentes nesses anos podem ter sido fortemente influenciados pela pandemia de COVID-19 e podem não refletir a tendência geral.
+      
 1. Plotar Intervalo de Confiança via Bootstrap do Número de Acidentes por Mês:
     - Utilize a técnica de bootstrap para calcular intervalos de confiança para o número de acidentes em cada mês. Plote esses intervalos juntamente com a média mensal dos acidentes para visualizar a variabilidade e a confiança das estimativas.
-1. Usar o Número de Acidentes de 2022 para Prever 2023:
+      
+1. Usar o Número de Acidentes de 2021 para Prever 2022:
     - Aplique métodos de previsão (como modelos de regressão) para estimar o número de acidentes em 2023, utilizando os dados de 2022 como base. Avalie a precisão do modelo e discuta suas limitações.
+      
 1. Fazer Análises Adicionais de Interesse:
     - Realize análises exploratórias adicionais que sejam de seu interesse ou relevância para o projeto. Isso pode incluir a correlação entre diferentes variáveis, a análise de hotspots de acidentes, ou a investigação de fatores contribuintes para a gravidade dos acidentes.
-10. Fazer análises adicionais que tenha interesse
+      
+1. Fazer análises adicionais que tenha interesse
