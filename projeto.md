@@ -126,10 +126,18 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
 1. Repita o gráfico acima considerando gráficos fatais e não fatais.
     
 1. Plotar Mapa de Belo Horizonte por Tipo de Acidente:
-    - Faça um gráfico de dispersão das coordenadas X e Y dos acidentes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, plote os locais dos acidentes e categorize-os por tipo. Utilize cores ou marcadores distintos para cada tipo de acidente.
-      
-1. Plotar Série Temporal de Acidentes por Ano/Mês:
-    - Crie gráficos de séries temporais que mostrem a quantidade de acidentes ao longo do tempo, agregando os dados por ano e mês. Identifique tendências, picos e padrões sazonais.
+    - Faça um gráfico de dispersão das coordenadas X e Y dos acidentes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, faça gráficos por tipos diferentes de acidentes.
+    - Dica: use o plot hexbin conforme abaixo
+    ```
+    df.plot(
+        kind='hexbin',
+        x='coordenada_x',
+        y='coordenada_y',
+        mincnt=1,
+        gridsize=75,
+        bins='log'
+    )
+    ```
       
 1. Remover Dados de 2020 e 2021 da Base, Devido à Pandemia:
     - Exclua os dados referentes aos anos de 2020 e 2021, pois os padrões de acidentes nesses anos podem ter sido fortemente influenciados pela pandemia de COVID-19 e podem não refletir a tendência geral.
