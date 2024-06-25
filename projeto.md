@@ -150,5 +150,3 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
       
 1. Fazer Análises Adicionais de Interesse:
     - Realize análises exploratórias adicionais que sejam de seu interesse ou relevância para o projeto. Isso pode incluir a correlação entre diferentes variáveis, a análise de hotspots de acidentes, ou a investigação de fatores contribuintes para a gravidade dos acidentes.
-      
-1. Fazer análises adicionais que tenha interesse
