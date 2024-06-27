@@ -5,7 +5,7 @@ description: Sobre o Projeto.
 nav_order: 2
 ---
 
-# Projeto
+# Análise dos Acidentes de Trânsito de Belo Horizonte
 
 {: .no_toc .mb-2 }
 
@@ -17,13 +17,13 @@ Praticar a matéria fazendo uma análise não trivial
 {:toc}
 ---
 
-## Análise dos Acidentes de Trânsito de Belo Horizonte
+## Introdução
 
 Neste projeto, vamos aplicar as técnicas aprendidas em sala de aula a alguns problemas de ciência de dados. Nosso projeto tem um tema fixo, funcionando como um laboratório mais complexo. O importante é que você siga todo o ciclo de trabalho de um cientista de dados, realizando uma análise além do trivial (como computar uma média) em uma base de dados que requer as duas partes da matéria.
 
 Para baixar a base, [clique aqui](http://flaviovdf.io/fcd/assets/99-Projeto/dados.zip).
 
-### Base de Dados
+## Base de Dados
 
 A base de dados a ser analisada consiste em registros de acidentes de trânsito na cidade de Belo Horizonte. A base é separada em vários arquivos csv que podem ser lidos diretamente com babypandas. Para isso, use o código abaixo:
 
@@ -38,7 +38,7 @@ for f in glob.glob('*.csv'):
     df = df.append(aux)
 ```
 
-#### Lendo vários arquivos
+### Lendo vários arquivos
 
 Observe que o código faz uso da biblioteca glob, que serve para ler todos os arquivos de uma determinada pasta. Por exemplo, se sua pasta contiver os seguintes arquivos:
 
@@ -71,7 +71,7 @@ A linha de código glob.glob('*.csv') retornará todos os arquivos que terminam 
  'si-bol-2013.csv']
 ```
 
-#### Colando um índice de datas 
+### Colando um índice de datas 
 
 Infelizmente, o BabyPandas não lida muito bem com datas. Por isso, vamos tratar as datas usando pandas. A função pd.to_datetime converte texto em datas, funcionando bem no nosso caso.
 
@@ -91,7 +91,7 @@ df = df.assign(
 )
 ```
 
-#### Removendo as colunas que não precisamos
+### Removendo as colunas que não precisamos
 
 Por fim, vamos remover todas as colunas desnecessárias e configurar um índice.
 
@@ -113,7 +113,8 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
 1. Mapear Colunas para IDs Corretos:
     - Identifique as colunas no DataFrame que representam categorias mas estão codificadas com números ou códigos como `H06002`. Renomeie ou mapeie essas colunas para IDs corretos que facilitem a análise e manipulação dos dados. Para mapear as colunas para nomes interessante, vocês devem fazer uso do dicionário de varáveis disponível [aqui](https://dados.pbh.gov.br/dataset/relacao-de-ocorrencias-de-acidentes-de-transito-com-vitima). Abra o mesmo em excell ou google sheets.
     - Dica 1: Use um `if` ou se quiser se souber, um dicionário, para mapear cada categoria no texto correto.
-    - Dica 2: Procure no material da disciplina o local que falamos de funções e apply
+    - Dica 2: Salve o excell como csv e carregue em BabyPandas
+    - Dica 3: Procure no material da disciplina o local que falamos de funções e apply
 
 1. Limpar Valores Estranhos nas Colunas X e Y:
     - Inspecione as colunas que representam coordenadas geográficas (x e y). Identifique e corrija valores anômalos ou fora do esperado. Considere valores nulos ou que estejam fora do alcance geográfico da cidade de Belo Horizonte. Por exemplo, os valores de eixo x ou y igual a zero tem que sair. Além do mais, existem valores extremos. Faça um gráfico de dispersão, próximo item, indentifique os mesmos e remova-os.
@@ -124,10 +125,12 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
     - Dica: Vá para a aula de visualizações e para a aula de groupby
 
 1. Repita o gráfico acima considerando gráficos fatais e não fatais.
+    - Dica: Vá para a aula de visualizações e para a aula de groupby
     
 1. Plotar Mapa de Belo Horizonte por Tipo de Acidente:
     - Faça um gráfico de dispersão das coordenadas X e Y dos acidentes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, faça gráficos por tipos diferentes de acidentes.
-    - Dica: use o plot hexbin conforme abaixo
+    - Dica 1: use o plot hexbin conforme abaixo
+    - Dica 2: faça um gráfico diferente por tipo, se colocar todos no mesmo gráfico vai ser impossível ver
     ```
     df.plot(
         kind='hexbin',
@@ -139,14 +142,18 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
     )
     ```
       
-1. Remover Dados de 2020 e 2021 da Base, Devido à Pandemia:
-    - Exclua os dados referentes aos anos de 2020 e 2021, pois os padrões de acidentes nesses anos podem ter sido fortemente influenciados pela pandemia de COVID-19 e podem não refletir a tendência geral.
-      
 1. Plotar Intervalo de Confiança via Bootstrap do Número de Acidentes por Mês:
     - Utilize a técnica de bootstrap para calcular intervalos de confiança para o número de acidentes em cada mês. Plote esses intervalos juntamente com a média mensal dos acidentes para visualizar a variabilidade e a confiança das estimativas.
-      
-1. Usar o Número de Acidentes de 2021 para Prever 2022:
-    - Aplique métodos de previsão (como modelos de regressão) para estimar o número de acidentes em 2023, utilizando os dados de 2022 como base. Avalie a precisão do modelo e discuta suas limitações.
+
+1. Use o Número de Acidentes por bairro de 2019 para Prever 2022:
+1. Também use os de 2020
+1. Por fim use os de 2022
+    - Aplique métodos de previsão (como modelos de regressão) para estimar o número de acidentes em 2023, utilizando os dados passados.
+    - Avalie os erros do modelo e discuta as limitações.
+    - Compare os três modelos. A pandemia teve algum impacto, qual?
+
+1. Vamos brincar de regressão. Inicialmente, faça um gráfico de dispersão onde o eixo X é o número de acidentes em 2019, 2020 ou 2021. Serão três gráficos. Cada ponto no gráfico vai corresponder a um tipo de acidente.
+    - Dica: Para  
       
 1. Fazer Análises Adicionais de Interesse:
-    - Realize análises exploratórias adicionais que sejam de seu interesse ou relevância para o projeto. Isso pode incluir a correlação entre diferentes variáveis, a análise de hotspots de acidentes, ou a investigação de fatores contribuintes para a gravidade dos acidentes.
+    - Realize análises adicionais que sejam de seu interesse ou relevância para o projeto. Isso pode incluir a correlação entre diferentes variáveis, a análise de hotspots de acidentes, ou a investigação de fatores contribuintes para a gravidade dos acidentes.
