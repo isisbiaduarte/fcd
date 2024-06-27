@@ -116,10 +116,12 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
     - Dica 2: Salve o excell como csv e carregue em BabyPandas
     - Dica 3: Procure no material da disciplina o local que falamos de funções e apply
 
-1. Limpar Valores Estranhos nas Colunas X e Y:
-    - Inspecione as colunas que representam coordenadas geográficas (x e y). Identifique e corrija valores anômalos ou fora do esperado. Considere valores nulos ou que estejam fora do alcance geográfico da cidade de Belo Horizonte. Por exemplo, os valores de eixo x ou y igual a zero tem que sair. Além do mais, existem valores extremos. Faça um gráfico de dispersão, próximo item, indentifique os mesmos e remova-os.
-    - Dica 1: Filtre qualquer x ou y menor do que dez milhões (10_000_000). A latitudes e longitudes de BH não é menor do que isso.
-    - Dica 2: Vá para a aula de filtro e queries.
+1. Faça um gráfico **de linhas** por ano mês indicando o número de acidentes naquele ano mês.
+    - Dica 1: Comece com um `df.groupby(['ano', 'mes'].size()`
+    - Dica 2: Faça o plot usando a resposta da chamada acima
+    - Dica 3: Olhe a aula de Visualizações, a chamada `.plot`. 
+
+1. Repita o gráfico acima por ano apenas.
 
 1. Faça um gráfico de barras **por ano** indicandos os tipos de acidentes mais comuns no ano.
     - Dica: Vá para a aula de visualizações e para a aula de groupby
@@ -128,14 +130,14 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
     - Dica: Vá para a aula de visualizações e para a aula de groupby
     
 1. Plotar Mapa de Belo Horizonte por Tipo de Acidente:
-    - Faça um gráfico de dispersão das coordenadas X e Y dos acidentes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, faça gráficos por tipos diferentes de acidentes.
+    - Faça um gráfico de dispersão das latitudes e longitudes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, faça gráficos por tipos diferentes de acidentes.
     - Dica 1: use o plot hexbin conforme abaixo
     - Dica 2: faça um gráfico diferente por tipo, se colocar todos no mesmo gráfico vai ser impossível ver
     ```
     df.plot(
         kind='hexbin',
-        x='coordenada_x',
-        y='coordenada_y',
+        x='lat',
+        y='lon',
         mincnt=1,
         gridsize=75,
         bins='log'
