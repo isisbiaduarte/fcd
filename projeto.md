@@ -44,10 +44,6 @@ Observe que o código faz uso da biblioteca glob, que serve para ler todos os ar
 
 ```
 $ ls
--rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2012.csv
--rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2013.csv
--rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2014.csv
--rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2015.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2016.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2017.csv
 -rw-r--r-- 1 flaviovdf flaviovdf 4683223 Jun 24 08:59 si-bol-2018.csv
@@ -66,9 +62,8 @@ A linha de código glob.glob('*.csv') retornará todos os arquivos que terminam 
  'si-bol-2015.csv',
  'si-bol-2019.csv',
  'si-bol-2012.csv',
- 'si-bol-2022.csv',
- 'si-bol-2014.csv',
- 'si-bol-2013.csv']
+ 'si-bol-2020.csv',
+ 'si-bol-2022.csv']
 ```
 
 ### Colando um índice de datas 
