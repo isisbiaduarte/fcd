@@ -121,13 +121,15 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
     - Dica 2: Faça o plot usando a resposta da chamada acima
     - Dica 3: Olhe a aula de Visualizações, a chamada `.plot`. 
 
-1. Repita o gráfico acima por ano apenas.
+1. Repita o gráfico acima por **ano** apenas.
 
 1. Faça um gráfico de barras **por ano** indicandos os tipos de acidentes mais comuns no ano.
     - Dica: Vá para a aula de visualizações e para a aula de groupby
 
 1. Repita o gráfico acima considerando gráficos fatais e não fatais.
     - Dica: Vá para a aula de visualizações e para a aula de groupby
+  
+1. Faça a mesma análise por bairro e por acidentes fatais e não fatais
     
 1. Plotar Mapa de Belo Horizonte por Tipo de Acidente:
     - Faça um gráfico de dispersão das latitudes e longitudes. O mesmo deve parecer com o mapa de BH. Para entender bem os tipos de acidentes, faça gráficos por tipos diferentes de acidentes.
@@ -147,15 +149,25 @@ Agora é com vocês. Com o novo DataFrame, vocês devem abordar os 8 problemas a
 1. Plotar Intervalo de Confiança via Bootstrap do Número de Acidentes por Mês:
     - Utilize a técnica de bootstrap para calcular intervalos de confiança para o número de acidentes em cada mês. Plote esses intervalos juntamente com a média mensal dos acidentes para visualizar a variabilidade e a confiança das estimativas.
 
+
+1. Vamos brincar de regressão. Inicialmente, faça um gráfico de dispersão onde o eixo X é o número de acidentes em 2019, 2020 ou 2021. Serão três gráficos. Cada ponto no gráfico vai corresponder a um bairro.
+    - Dica 1: Faça um `df.groupby(['bairro', 'ano']).size()`
+    - Dica 2: Faça um merge para juntar os dois anos
+    ```python
+    cont = df_filt.groupby(['bairro', 'ano']).size().reset_index()
+    dados_2019 = cont[cont.get('ano') == 2021]
+    dados_2022 = cont[cont.get('ano') == 2022]
+    dados_2019.merge(
+        dados_2022,
+        on='bairro'
+    ```
+      
 1. Use o Número de Acidentes por bairro de 2019 para Prever 2022:
-1. Também use os de 2020
-1. Por fim use os de 2022
+    - Também use os de 2020
+    - Por fim use os de 2022
     - Aplique métodos de previsão (como modelos de regressão) para estimar o número de acidentes em 2023, utilizando os dados passados.
     - Avalie os erros do modelo e discuta as limitações.
     - Compare os três modelos. A pandemia teve algum impacto, qual?
-
-1. Vamos brincar de regressão. Inicialmente, faça um gráfico de dispersão onde o eixo X é o número de acidentes em 2019, 2020 ou 2021. Serão três gráficos. Cada ponto no gráfico vai corresponder a um tipo de acidente.
-    - Dica: Para  
       
 1. Fazer Análises Adicionais de Interesse:
     - Realize análises adicionais que sejam de seu interesse ou relevância para o projeto. Isso pode incluir a correlação entre diferentes variáveis, a análise de hotspots de acidentes, ou a investigação de fatores contribuintes para a gravidade dos acidentes.
