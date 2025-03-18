@@ -56,7 +56,7 @@ def mostrar_historico():
     return IFrame(src, width, height)
 ```
 
-## Fundamentos de Ciência de Dados - 2024.1
+## Fundamentos de Ciência de Dados - 2025.1
 
 ### Bem-vindo ao curso de Ciência de Dados (UFMG)! 👋
 - Hoje terermos uma visita guiada à ciência de dados.
@@ -106,7 +106,7 @@ def mostrar_historico():
 
 Além disso, temos uma equipe de monitores para ajudar vocês.
 
-- **Dois Monitores de Mestrado**: Thiago Poppe e João Pedro.
+- **XX Monitores de Mestrado**: Ainda será definido
 - **XX Monitores de graduação**: Ainda será definido
 - **A comunicação com os monitres é via Moodle (já falo disso breve)**
 
@@ -228,7 +228,7 @@ As sessões de monitoria servem para que você pratique as **ideias** do curso.
 - <span style='color:red'><b>🚨 Essa Lista Vai Aumentar!!</b>.</span>
 
 ### Primeira tarefa
-- O laboratório 0 será entregue **Domingo, 24 de Março às 23h59**.
+- O laboratório 0 será entregue **Domingo, 30 de Março às 23h59**.
 - Será lançada até quinta. Discutirei em sala!
 - <span style='color:red'><b>🚨 Importante: comece cedo e envie com frequência</b>.</span>
 
